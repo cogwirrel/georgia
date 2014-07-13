@@ -67,10 +67,10 @@
 	        showInfo:   false,
 	        background: ['#272727'],
 	        onComplete: function() {
-	        	window.setTimeout(function() {
-	        		console.log("refreshing skrollr");
-	        		window.skrl.refresh();
-	        	}, 2000);
+	        	 window.setTimeout(function() {
+	        	 	console.log("refreshing skrollr");
+	        	 	window.skrl.refresh();
+	        	 }, 2000);
 	        }
 	    });
 	</script>
@@ -89,8 +89,8 @@
 		<!-- Wrapper for slides -->
 		<div class="carousel-inner">
 
-			<div class="item">
-				<div id="slide1" class="fill skrollable skrollable-before" data-top-bottom="background-position: 50% -200px;" data-center="background-position: 50% 0px" data-bottom-top="background-position: 50% 200px;" data-anchor-target=".carousel-h1">
+			<div class="item active">
+				<div id="slide1" class="fill skrollable" style="background-image: url(img/slider/slide1.jpg)" data-700="background-position: 50% -300px;" data-0="background-position: 50% 0px;" data-anchor-target=".carousel h1">
 					<div class="container text-center center-vertically">
 			    		<p class="slider-description">Something something I'm amazing</p>
 			    		<hr class="carousel-hr">
@@ -105,8 +105,8 @@
 				</div>
 			</div>
 
-			<div class="item active">
-				<div id="slide2" class="fill skrollable skrollable-before" data-top-bottom="background-position: 50% -200px;" data-center="background-position: 50% 0px" data-bottom-top="background-position: 50% 200px;" data-anchor-target=".carousel-h1">
+			<div class="item">
+				<div id="slide2" class="fill skrollable" style="background-image: url(img/slider/slide2.jpg)" data-700="background-position: 50% -300px;" data-0="background-position: 50% 0px;" data-anchor-target=".carousel h1">
 					<div class="container text-center center-vertically">
 			    		<p class="slider-description">Seriously I'm amazing</p>
 						<div>
@@ -124,7 +124,7 @@
 			</div>
 
 			<div class="item">
-				<div id="slide3" class="fill skrollable skrollable-before" data-top-bottom="background-position: 50% -200px;" data-center="background-position: 50% 0px" data-bottom-top="background-position: 50% 200px;" data-anchor-target=".carousel-h1">
+				<div id="slide3" class="fill skrollable" style="background-image: url(img/slider/slide3.jpg)" data-700="background-position: 50% -300px;" data-0="background-position: 50% 0px;" data-anchor-target=".carousel h1">
 					<div class="container text-center center-vertically">
 			    		<p class="slider-description">Did you know that I'm</p>
 						<div>
@@ -303,7 +303,7 @@
 	<!-- End Call to Action -->
 
 		<!-- Begin Quote -->
-	<div class="quote skrollable skrollable-before" data-top-bottom="background-position: 50% -400px;" data-bottom-top="background-position: 50% -100px;" data-anchor-target=".quote-content">
+	<div class="quote skrollable" data-top-bottom="background-position: 50% -400px;" data-bottom-top="background-position: 50% -100px;" data-anchor-target=".quote-content">
 
 		<div class="container">
 

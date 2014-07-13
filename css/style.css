@@ -262,15 +262,13 @@ ul.nav a:hover {
 
 /* =Carousel
 -------------------------------------------------------------- */
-#slide1 {background: url(../img/slider/old-slide1.jpg);}
-#slide2 {background: url(../img/slider/old-slide2.jpg);}
-#slide3 {background: url(../img/slider/old-slide3.jpg);}
+/*#slide1 {background-image: url(../img/slider/old-slide1.jpg);}
+#slide2 {background-image: url(../img/slider/old-slide2.jpg);}
+#slide3 {background-image: url(../img/slider/old-slide3.jpg);}*/
 
 .carousel,.carousel .item,.active{height:100%;}
 .carousel-inner{height:100%;}
-.fill{width:100%;height:100%;display: table;background-size: cover;background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;}
+.fill{width:100%;height:100%;display: table;background-size: cover;}
 
 .carousel-h1 {
 	color: #fff;
