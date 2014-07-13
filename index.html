@@ -8,6 +8,10 @@
     <meta property="og:description" content="DESCRIPTION" />
     <meta property="og:url" content="http://georgiascott.co.uk" />
     <meta property="og:type" content="website" />
+    <meta name="description" content="DESCRIPTION">
+    <meta name="keywords" content="Georgia, Scott, Georgia Scott, Composer, RCM, Royal College of Music, Composition">
+    <meta name="author" content="Georgia Scott">
+    <!--<link rel="shortcut icon" type="image/ico" href="favicon.ico" />-->
 
 
     
@@ -27,23 +31,54 @@
 	<script type="text/javascript" src="js/royal_preloader.min.js"></script>
 	<script type="text/javascript">
 
+		// Change to your image paths
+	    var images = {
+	    	'slide1':     		'img/slider/slide1.jpg',
+	    	'slide2':     		'img/slider/slide2.jpg',
+	    	'slide3':     		'img/slider/slide3.jpg',
+	    	'team-member1':     'img/team-member-1.jpg',
+	    	'team-member2':     'img/team-member-2.jpg',
+	        'branding1':     	'img/projects/branding1.jpg',
+	        'branding2':     	'img/projects/branding2.jpg',
+	        'branding3':    	'img/projects/branding3.jpg',
+	        'print1':  			'img/projects/print1.jpg',
+	        'print2':     		'img/projects/print2.jpg',
+	        'print3':   		'img/projects/print3.jpg',
+	        'web1':   			'img/projects/web1.jpg',
+	        'web2':   			'img/projects/web2.jpg',
+	        'web3':   			'img/projects/web3.jpg',
+	        'branding1thumb':   'img/projects/thumbs/branding1.jpg',
+	        'branding2thumb':   'img/projects/thumbs/branding2.jpg',
+	        'branding3thumb':   'img/projects/thumbs/branding3.jpg',
+	        'print1thumb':   	'img/projects/thumbs/print1.jpg',
+	        'print2thumb':   	'img/projects/thumbs/print2.jpg',
+	        'print3thumb':   	'img/projects/thumbs/print3.jpg',
+	        'web1thumb':   		'img/projects/thumbs/web1.jpg',
+	        'web2thumb':  		'img/projects/thumbs/web2.jpg',
+	        'web3thumb':   		'img/projects/thumbs/web3.jpg',
+	        'quote1':     		'img/quote/bg.jpg',
+	    };
+
 	    // config
 	    Royal_Preloader.config({
 	        mode:       'text',
 	        images:     images,
 	        timeout:    10,
 	        showInfo:   false,
-	        background: ['#272727']
+	        background: ['#272727'],
+	        onComplete: function() {
+	        	window.setTimeout(function() {
+	        		console.log("refreshing skrollr");
+	        		window.skrl.refresh();
+	        	}, 2000);
+	        }
 	    });
 	</script>
 
 	<!-- Icon Fonts -->
 	<link href="css/ionicons.min.css" rel="stylesheet" type="text/css">
 
-    <meta name="description" content="DESCRIPTION">
-    <meta name="keywords" content="Georgia, Scott, Georgia Scott, Composer, RCM, Royal College of Music, Composition">
-    <meta name="author" content="Georgia Scott">
-    <!--<link rel="shortcut icon" type="image/ico" href="favicon.ico" />-->
+    
   </head>
 
   <body class="" data-spy="scroll" data-target="#myScrollSpy" data-offset="200">
@@ -55,12 +90,12 @@
 		<div class="carousel-inner">
 
 			<div class="item">
-				<div class="fill skrollable skrollable-between" style="background-image: url(http://www.aliensix.com/boltdemoup/fullscreen-slider/img/slider/slide1.jpg); background-position: 50% -200px;" data-top-bottom="background-position: 50% -200px;" data-bottom-top="background-position: 50% 100px;" data-anchor-target=".carousel h1">
+				<div id="slide1" class="fill skrollable skrollable-before" data-top-bottom="background-position: 50% -200px;" data-center="background-position: 50% 0px" data-bottom-top="background-position: 50% 200px;" data-anchor-target=".carousel-h1">
 					<div class="container text-center center-vertically">
-			    		<p class="slider-description">We are Bolt &amp; we like to <em>focus</em> on</p>
+			    		<p class="slider-description">Something something I'm amazing</p>
 			    		<hr class="carousel-hr">
 						<div>
-							<h1 class="carousel-h1">Development</h1>
+							<h1 id="carousel-h1-1" class="carousel-h1">Georgia Scott</h1>
 						</div>
 						<hr class="carousel-hr">
 						<a href="#" data-id="section2" class="btn btn-default bolt-button-light scroll-link" style="margin-top:10px;">
@@ -71,14 +106,14 @@
 			</div>
 
 			<div class="item active">
-				<div class="fill skrollable skrollable-between" style="background-image: url(http://www.aliensix.com/boltdemoup/fullscreen-slider/img/slider/slide2.jpg); background-position: 50% -200px;" data-top-bottom="background-position: 50% -200px;" data-bottom-top="background-position: 50% 100px;" data-anchor-target=".carousel h1">
+				<div id="slide2" class="fill skrollable skrollable-before" data-top-bottom="background-position: 50% -200px;" data-center="background-position: 50% 0px" data-bottom-top="background-position: 50% 200px;" data-anchor-target=".carousel-h1">
 					<div class="container text-center center-vertically">
-			    		<p class="slider-description">And also on</p>
+			    		<p class="slider-description">Seriously I'm amazing</p>
 						<div>
-							<h1 class="carousel-h1">Design</h1>
+							<h1 id="carousel-h1-2" class="carousel-h1">Composition or Something</h1>
 						</div>
 						<div class="slider-description col-sm-4 col-sm-offset-4">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a elit turpis. Phasellus non varius mi. Nam bibendum mauris at sollicitudin lacinia. Vestibulum blandit nibh neque.
+							Wow look at me, I'm so great, you should hire me for lots of money.
 							<hr class="carousel-hr">
 							<a href="#" data-id="section6" class="btn btn-default bolt-button-light scroll-link" style="margin-top:10px;">
 								Contact &nbsp;&nbsp;<span class="ion-ios7-arrow-down"></span>
@@ -89,14 +124,14 @@
 			</div>
 
 			<div class="item">
-				<div class="fill skrollable skrollable-between" style="background-image: url(http://www.aliensix.com/boltdemoup/fullscreen-slider/img/slider/slide3.jpg); background-position: 50% -200px;" data-top-bottom="background-position: 50% -200px;" data-bottom-top="background-position: 50% 100px;" data-anchor-target=".carousel h1">
+				<div id="slide3" class="fill skrollable skrollable-before" data-top-bottom="background-position: 50% -200px;" data-center="background-position: 50% 0px" data-bottom-top="background-position: 50% 200px;" data-anchor-target=".carousel-h1">
 					<div class="container text-center center-vertically">
-			    		<p class="slider-description">As well as on</p>
+			    		<p class="slider-description">Did you know that I'm</p>
 						<div>
-							<h1 class="carousel-h1">Innovation</h1>
+							<h1 id="carousel-h1-3" class="carousel-h1">Seriously Cool</h1>
 						</div>
 						<div class="slider-description col-sm-4 col-sm-offset-4">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a elit turpis. Phasellus non varius mi. Nam bibendum mauris at.
+							Like cooler than you can imagine.
 						</div>
 					</div>
 				</div>
@@ -125,7 +160,7 @@
 
 				<!-- Brand -->
 				<a href="javascript:void(0);" class="navbar-brand scroll-top">
-					<span class="ion-ios7-bolt-outline logo-icon"></span>
+					<span class="ion-ios7-musical-notes logo-icon"></span>
 				</a>
 
 				<!-- Mobile Navigation -->
@@ -141,8 +176,6 @@
 					<li class="active"><a href="#section1" data-id="section1" class="scroll-link">Home</a></li>
 					<li class=""><a href="#section2" data-id="section2" class="scroll-link">Portfolio</a></li>
 					<li class=""><a href="#section3" data-id="section3" class="scroll-link">About</a></li>
-					<li class=""><a href="#section4" data-id="section4" class="scroll-link">Team</a></li>
-					<li class=""><a href="#section5" data-id="section5" class="scroll-link">Services</a></li>
 					<li class=""><a href="#section6" data-id="section6" class="scroll-link">Contact</a></li>
 				</ul>
 			</nav>
@@ -162,11 +195,11 @@
 				<!-- Content -->
 				<div class="row">
 					<div class="col-lg-10 col-lg-offset-1">
-						<h3 data-scroll-reveal="enter left and move 50px over 1.2s" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true">We create useable ui</h3>
-						<hr data-scroll-reveal="" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true">
-						<p data-scroll-reveal="" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a elit turpis. Phasellus non varius mi. Nam bibendum mauris at sollicitudin lacinia. Vestibulum blandit nibh neque, id consequat mi vestibulum eu. Suspendisse potenti. Ut ac consequat nulla. Praesent tristique eleifend tincidunt.</p>
-						<a data-scroll-reveal="enter right and move 50px over 1.2s" href="#" data-id="section3" class="btn btn-default bolt-button-dark scroll-link" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true">
-							About us &nbsp;&nbsp;<span class="ion-ios7-arrow-down"></span>
+						<h3 data-scroll-reveal="enter left and move 50px over 1.2s" >Georgia Scott - Composer</h3>
+						<hr data-scroll-reveal="" >
+						<p data-scroll-reveal="" >I'm Georgia and I go to the Royal College of Music and I can do composition so please hire me.</p>
+						<a data-scroll-reveal="enter right and move 50px over 1.2s" href="#" data-id="section3" class="btn btn-default bolt-button-dark scroll-link" >
+							About &nbsp;&nbsp;<span class="ion-ios7-arrow-down"></span>
 						</a>
 					</div>
 				</div>
@@ -188,122 +221,50 @@
 				<div class="col-lg-12">
 					<h3>Portfolio</h3>
 					<hr>
-					<p>We also create some other stuff.</p>
+					<p>Here's some of the stuff that I have composed.</p>
 				</div>
 			</div>
 
 			<!-- Portfolio Filter -->
-			<div data-scroll-reveal="enter left and move 50px over 1s" class="container text-center" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true">
+			<div data-scroll-reveal="enter left and move 50px over 1s" class="container text-center" >
 			  <ul class="nav nav-pills">
-			    <li class="filter active" data-filter="all">all</li>
-			    <li class="filter" data-filter="print">print</li>
-			    <li class="filter" data-filter="web">web</li>
-			    <li class="filter" data-filter="branding">branding</li>
-			    <li class="filter" data-filter="illustrations">illustrations</li>
+			    <li class="filter active" data-filter="all">All</li>
+			    <li class="filter" data-filter="concerto">Concertos</li>
+			    <li class="filter" data-filter="ballet">Ballets</li>
+			    <li class="filter" data-filter="musical">Musical Theatre</li>
+			    <li class="filter" data-filter="orchestration">Orchestration</li>
 			  </ul>
 			</div>
 
 			<!-- Portfolio Items -->
 			<div class="container port-holder">
 			  <ul id="myPortfolio" class="no-padding">
-			    <li class="item branding col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
-			    	<a data-toggle="modal" href="projects/project-1.html" data-target="#myModal">
-						<img src="img/projects/thumbs/branding1.jpg" alt="...">
-						<span class="portfolio-hover">
-						  <span>
-						  	<span class="portfolio-title">Beach Sand</span><br>
-						  	<span class="portfolio-category">Branding</span>
-						  </span>
-						</span>
-					</a>
+			    <li class="item musical col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
+			    	<iframe width="100%" height="380" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>				
 			    </li>
-			    <li class="item web col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
-			    	<a data-toggle="modal" href="projects/project-2.html" data-target="#myModal">
-						<img src="img/projects/thumbs/web1.jpg" alt="...">
-						<span class="portfolio-hover">
-						  <span>
-						  	<span class="portfolio-title">B&amp;W Scene</span><br>
-						  	<span class="portfolio-category">Web Design</span>
-						  </span>
-						</span>
-					</a>
+			    <li class="item ballet col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
+			    	<iframe width="100%" height="380" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 			    </li>
-			    <li class="item print col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
-			    	<a data-toggle="modal" href="projects/project-3.html" data-target="#myModal">
-						<img src="img/projects/thumbs/print1.jpg" alt="...">
-						<span class="portfolio-hover">
-						  <span>
-						  	<span class="portfolio-title">Metal</span><br>
-						  	<span class="portfolio-category">Print</span>
-						  </span>
-						</span>
-					</a>
+			    <li class="item concerto col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
+			    	<iframe width="100%" height="380" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 			    </li>
-			    <li class="item branding illustrations col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
-			    	<a data-toggle="modal" href="projects/project-4.html" data-target="#myModal">
-						<img src="img/projects/thumbs/branding2.jpg" alt="...">
-						<span class="portfolio-hover">
-						  <span>
-						  	<span class="portfolio-title">Bridge Cityscape</span><br>
-						  	<span class="portfolio-category">Branding + Illustrations</span>
-						  </span>
-						</span>
-					</a>
+			    <li class="item musical orchestration col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
+			    	<iframe width="100%" height="380" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 			    </li>
-			    <li class="item print col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
-			    	<a data-toggle="modal" href="projects/project-5.html" data-target="#myModal">
-						<img src="img/projects/thumbs/print2.jpg" alt="...">
-						<span class="portfolio-hover">
-						  <span>
-						  	<span class="portfolio-title">Camera</span><br>
-						  	<span class="portfolio-category">Print</span>
-						  </span>
-						</span>
-					</a>
+			    <li class="item concerto col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
+			    	<iframe width="100%" height="380" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 			    </li>
-			    <li class="item branding col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
-			    	<a data-toggle="modal" href="projects/project-6.html" data-target="#myModal">
-						<img src="img/projects/thumbs/branding3.jpg" alt="...">
-						<span class="portfolio-hover">
-						  <span>
-						  	<span class="portfolio-title">B&amp;W City</span><br>
-						  	<span class="portfolio-category">Branding</span>
-						  </span>
-						</span>
-					</a>
+			    <li class="item musical col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
+			    	<iframe width="100%" height="380" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 			    </li>
-			    <li class="item web col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
-			    	<a data-toggle="modal" href="projects/project-7.html" data-target="#myModal">
-						<img src="img/projects/thumbs/web2.jpg" alt="...">
-						<span class="portfolio-hover">
-						  <span>
-						  	<span class="portfolio-title">Objects</span><br>
-						  	<span class="portfolio-category">Web Design</span>
-						  </span>
-						</span>
-					</a>
+			    <li class="item ballet col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
+			    	<iframe width="100%" height="380" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 			    </li>
-			    <li class="item print illustrations col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
-			    	<a data-toggle="modal" href="projects/project-8.html" data-target="#myModal">
-						<img src="img/projects/thumbs/print3.jpg" alt="...">
-						<span class="portfolio-hover">
-						  <span>
-						  	<span class="portfolio-title">Paradise</span><br>
-						  	<span class="portfolio-category">Print + Illustrations</span>
-						  </span>
-						</span>
-					</a>
+			    <li class="item concerto orchestration col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
+			    	<iframe width="100%" height="380" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 			    </li>
-			    <li class="item web illustrations col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
-			    	<a data-toggle="modal" href="projects/project-9.html" data-target="#myModal">
-						<img src="img/projects/thumbs/web3.jpg" alt="...">
-						<span class="portfolio-hover">
-						  <span>
-						  	<span class="portfolio-title">Eary</span><br>
-						  	<span class="portfolio-category">Web + Illustrations</span>
-						  </span>
-						</span>
-					</a>
+			    <li class="item ballet orchestration col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
+			    	<iframe width="100%" height="380" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 			    </li>
 			  </ul>
 			</div>
@@ -313,17 +274,8 @@
 	</section>
 	<!-- End Portfolio -->
 
-	<!-- Modal -->
-	<div class="modal fade" id="myModal" role="dialog" aria-hidden="true">
-	    <div class="modal-dialog">
-	        <div class="modal-content">
-	            <div class="modal-body"></div>
-	        </div> <!-- /.modal-content -->
-	    </div> <!-- /.modal-dialog -->
-	</div> <!-- /.modal -->
-
 	<!-- Begin Call to Action -->
-	<div class="cta">
+	<!-- <div class="cta">
 
 		<div class="container">
 
@@ -347,8 +299,29 @@
 
 		</div>
 
-	</div>
+	</div> -->
 	<!-- End Call to Action -->
+
+		<!-- Begin Quote -->
+	<div class="quote skrollable skrollable-before" data-top-bottom="background-position: 50% -400px;" data-bottom-top="background-position: 50% -100px;" data-anchor-target=".quote-content">
+
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-lg-12">
+					<p data-scroll-reveal="enter top and move 50px over 1s" class="quote-content" >
+						Like what you hear?
+					</p>
+					<a data-scroll-reveal="enter bottom and move 50px over 1s" href="#" data-id="section6" class="btn btn-default bolt-quote-name scroll-link" >Get In Touch</a>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+	<!-- End Quote -->
 
 	<!-- Begin About Us -->
 	<section id="section3">
@@ -363,26 +336,28 @@
 					<div class="col-lg-10 col-lg-offset-1 page-title-2">
 						<h3>About</h3>
 						<hr>
-						<p>A passionate team of creative &amp; innovative minds.</p>
-					</div>
-
-					<!-- Who We Are-->
-					<div data-scroll-reveal="enter top and move 50px over 1.2s" class="col-sm-4 col-sm-offset-1" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true">
-						<h5>Who We Are</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a elit turpis. Phasellus non varius mi.</p>
-					</div> 
-
-					<!-- Goals -->
-					<div data-scroll-reveal="enter bottom and move 50px over 1.2s" class="col-sm-6" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true">
-						<h5>Goals</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a elit turpis. Phasellus non varius mi. Nam bibendum mauris at sollicitudin lacinia. </p>
+						<p>A talented composer blah blah blah</p>
 					</div>
 
 					<!-- The Team -->
-					<div data-scroll-reveal="enter bottom and move 50px over 1.2s" class="col-sm-10 col-sm-offset-1" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true">
-						<h5>The Team</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a elit turpis. Phasellus non varius mi. Nam bibendum mauris at sollicitudin lacinia. Vestibulum blandit nibh neque, id consequat mi vestibulum eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a elit turpis. </p>
+					<div data-scroll-reveal="enter bottom and move 50px over 1.2s" class="col-sm-10 col-sm-offset-1" >
+						<h5>Who am I</h5>
+						<p>I'm Georgia and I'm really good at composition. Did I mention that I am at RCM already? Probably, but still I'm going to say it again mwahahahaha!</p>
 					</div>
+
+					<!-- Who We Are-->
+					<div data-scroll-reveal="enter top and move 50px over 1.2s" class="col-sm-4 col-sm-offset-1" >
+						<h5>Experience</h5>
+						<p>I have had lots of experience in writing all sorts of cool things such as ballets.</p>
+					</div> 
+
+					<!-- Goals -->
+					<div data-scroll-reveal="enter bottom and move 50px over 1.2s" class="col-sm-6" >
+						<h5>Interests</h5>
+						<p>I am interested in anything that keeps me occupied so that I don't have to see my boyfriend - yuck!</p>
+					</div>
+
+					
 
 				</div>
 
@@ -392,195 +367,6 @@
 
 	</section>
 	<!-- End About Us -->
-
-	<!-- Begin Team -->
-	<section id="section4">
-
-		<div class="team">
-
-			<div class="container">
-
-				<div class="row">
-
-					<!-- Page Title -->
-					<div class="col-lg-10 col-lg-offset-1 page-title">
-						<h3>The Team</h3>
-						<hr>
-						<p>Small, but an <b>effective weapon</b>.</p>
-					</div>
-
-					<div id="content-holder">
-
-						<!-- Team Member 1 -->
-						<div data-scroll-reveal="enter top and move 50px over 1s" class="col-sm-4 col-sm-offset-2 team-member-holder" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true">
-							<img src="img/team-member-1.jpg" alt="...">
-							<div class="team-info-holder">
-								<h3 class="team-name">Johnathan Adams</h3>
-								<p class="team-job">Developer</p>
-							</div>
-							<div class="team-about">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a elit turpis. Phasellus non varius mi. Nam bibendum in mauris at sollicitudin lacinia vici veni vidi.
-								<div style="padding-top:15px;">
-									<div class="social-icon-holder">
-						                <a href="#"><span class="ion-social-twitter social-icon"></span></a>
-						            </div>
-						            <div class="social-icon-holder">
-						                <a href="#"><span class="ion-social-facebook social-icon"></span></a>
-						            </div>
-						            <div class="social-icon-holder">
-						                <a href="#"><span class="ion-social-dribbble social-icon"></span></a>
-						            </div>
-					            </div>
-							</div>
-						</div>
-
-						<!-- Team Member 2 -->
-						<div data-scroll-reveal="enter bottom and move 50px over 1s" class="col-sm-4 team-member-holder" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true">
-							<img src="img/team-member-2.jpg" alt="...">
-							<div class="team-info-holder">
-								<h3 class="team-name">Steven Adams</h3>
-								<p class="team-job">Designer</p>
-							</div>
-							<div class="team-about">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a elit turpis. Phasellus non varius mi. Nam bibendum in mauris at sollicitudin lacinia vici veni vidi.
-								<div style="padding-top:15px;">
-									<div class="social-icon-holder">
-						                <a href="#"><span class="ion-social-twitter social-icon"></span></a>
-						            </div>
-						            <div class="social-icon-holder">
-						                <a href="#"><span class="ion-social-facebook social-icon"></span></a>
-						            </div>
-						            <div class="social-icon-holder">
-						                <a href="#"><span class="ion-social-dribbble social-icon"></span></a>
-					            	</div>
-					            </div>
-							</div>
-						</div>
-
-					</div>
-
-				</div>
-
-			</div>
-
-		</div>
-
-	</section>
-	<!-- End Team -->
-
-	<!-- Begin Services -->
-	<section id="section5">
-
-		<div class="services">
-
-			<div class="container">
-
-				<div class="row">
-
-					<!-- Page Title -->
-					<div class="col-lg-10 col-lg-offset-1 page-title-2">
-						<h3>Services</h3>
-						<hr>
-						<p>We can help you with a variety of projects.</p>
-					</div>
-
-					<div class="col-lg-6 col-lg-offset-3" style="text-align: center;">
-
-						<!-- Nav --> 
-						<ul class="nav nav-tabs" style="display:inline-block;">
-						  <li class="active">
-							  	<a href="#design" data-toggle="tab">
-							  		<div class="services-icon-holder">
-							  			<span class="ion-ios7-browsers-outline services-icon"></span>
-							  			<p>Design</p>
-							  		</div>
-							  	</a>
-						  </li>
-						  <li>
-							  	<a href="#eshop" data-toggle="tab">
-							  		<div class="services-icon-holder">
-							  			<span class="ion-ios7-cart-outline services-icon"></span>
-							  			<p>eShop</p>
-							  		</div>
-							  	</a>
-						  </li>
-						  <li>
-							  	<a href="#social" data-toggle="tab">
-							  		<div class="services-icon-holder">
-							  			<span class="ion-ios7-chatbubble-outline services-icon"></span>
-							  			<p>Social</p>
-							  		</div>
-							  	</a>
-						  </li>
-						  <li>
-							  	<a href="#stats" data-toggle="tab">
-							  		<div class="services-icon-holder">
-							  			<span class="ion-arrow-graph-up-right services-icon"></span>
-							  			<p>Stats</p>
-							  		</div>
-							  	</a>
-						  </li>
-						  <li>
-							  	<a href="#photo" data-toggle="tab">
-							  		<div class="services-icon-holder">
-							  			<span class="ion-ios7-camera-outline services-icon"></span>
-							  			<p>Photo</p>
-							  		</div>
-							  	</a>
-						  </li>
-						  <li>
-							 	<a href="#cloud" data-toggle="tab">
-							 		<div class="services-icon-holder">
-							 			<span class="ion-ios7-cloud-outline services-icon"></span>
-							 			<p>Cloud</p>
-							  		</div>
-							 	</a>
-						  </li>
-						</ul>
-
-					</div>
-
-					<!-- Content -->
-					<div class="col-lg-8 col-lg-offset-2">
-						<div class="tab-content">
-						  <div class="tab-pane fade active in" id="design">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a elit turpis. Phasellus non varius mi. Nam bibendum in mauris at sollicitudin lacinia. Vestibulum blandit nibh neque, id consequat mi vestibulum eu. Lorem ipsum dolor sit zyzz.</div>
-						  <div class="tab-pane fade" id="eshop">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eros velit, lobortis id odio sed, elementum vestibulum justo. Praesent nec leo leo. Nulla vel volutpat nunc, eget lobortis velit. Nunc facilisis augue risus, eget tristique lorem vehicula vel.</div>
-						  <div class="tab-pane fade" id="social">Maecenas id enim at mauris aliquet aliquet. Nunc gravida venenatis urna quis mollis. Integer eget eros condimentum augue dapibus faucibus. Donec placerat nulla nec nisi sodales, nec ullamcorper nunc luctus. Aliquam erat volutpat.</div>
-						  <div class="tab-pane fade" id="stats">Nunc rhoncus gravida turpis nec scelerisque. Cras hendrerit vitae diam eget pharetra. Nam quam lacus, dignissim sed metus non, egestas gravida magna. Vivamus mattis vulputate lectus non faucibus. Pellentesque interdum nisza.</div>
-						  <div class="tab-pane fade" id="photo">Nullam hendrerit tellus vitae nisi pulvinar, eu faucibus ligula sollicitudin. Aenean lacinia imperdiet orci eu posuere. Quisque volutpat lacus vitae sollicitudin volutpat. Nunc pharetra quis lorem elementum mattis. Nulla nibh nunc.</div>
-						  <div class="tab-pane fade" id="cloud">Integer ultricies convallis blandit. Ut in volutpat velit. Nam ac tempor turpis. Donec at leo dignissim, tincidunt urna nec, aliquet est. Vivamus mi odio, adipiscing vel aliquam in, viverra vitae sapien. Integer sagittis nisl quis purus matti.</div>
-						</div> 
-					</div>
-
-				</div>
-
-			</div>
-
-		</div>
-
-	</section>
-	<!-- End Services -->
-
-	<!-- Begin Quote -->
-	<div class="quote skrollable skrollable-before" data-top-bottom="background-position: 50% -200px;" data-bottom-top="background-position: 50% 100px;" data-anchor-target=".quote-content" style="background-position: 50% 100px;">
-
-		<div class="container">
-
-			<div class="row">
-
-				<div class="col-lg-12">
-					<p data-scroll-reveal="enter top and move 50px over 1s" class="quote-content" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true">
-						It takes 20 years to build a reputation and five minutes to ruin it. If you think about that, you'll do things differently.
-					</p>
-					<a data-scroll-reveal="enter bottom and move 50px over 1s" href="#" data-id="section3" class="btn btn-default bolt-quote-name" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true">- Warren Buffett</a>
-				</div>
-
-			</div>
-
-		</div>
-
-	</div>
-	<!-- End Quote -->
 
 	<!-- Begin Contact -->
 	<section id="section6">
@@ -616,7 +402,7 @@
 				<!-- Form -->
 				<form name="contactform" method="post" action="php/mailer.php" class="form-horizontal" role="form">
 
-					<div data-scroll-reveal="enter top and move 50px over 1.5s" class="col-md-5" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true">
+					<div data-scroll-reveal="enter top and move 50px over 1.5s" class="col-md-5" >
 						<div class="form-group">
 							<div class="col-md-12">
 								<input type="text" class="form-control" id="inputName" name="inputName" placeholder="Name">
@@ -634,13 +420,13 @@
 						</div>
 					</div>
 					
-					<div data-scroll-reveal="enter bottom and move 50px over 1.5s" class="col-md-7" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true">
+					<div data-scroll-reveal="enter bottom and move 50px over 1.5s" class="col-md-7" >
 						<div class="form-group">
 							<div class="col-md-12">
 								<textarea class="form-control form-control-message" rows="5" id="inputMessage" name="inputMessage" placeholder="Message"></textarea>
 							</div>
 						</div>
-						<div data-scroll-reveal="enter bottom and move 50px over 1.7s" class="form-group" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true">
+						<div data-scroll-reveal="enter bottom and move 50px over 1.7s" class="form-group" >
 							<div class="col-md-12">
 								<button type="submit" class="btn btn-default bolt-button-send">
 									Send
@@ -665,17 +451,12 @@
 			
 			<!-- Copyright And Social -->
 			<div class="col-sm-5">
-				<p class="copyright no-margin">Copyright © Bolt - Rights Reserved</p>
+				<p class="copyright no-margin">Copyright &copy; Georgia Scott</p>
 			</div>
 
 			<!-- Go To Top -->
 			<div class="col-sm-3 text-center">
 				<p class="no-margin" style="text-align: center"><span class="ion-ios7-arrow-up up-icon scroll-top" style="display: inline-block;"></span></p>
-			</div>
-
-			<!-- Love -->
-			<div class="col-sm-4 made-with-love">
-				<p class="no-margin">Made with &nbsp;<span class="ion-ios7-heart heart-icon"></span>&nbsp; in Las Vegas.</p>
 			</div>
 
 		</div>
@@ -696,19 +477,9 @@
 	<script type="text/javascript" src="js/scrollReveal.js"></script>
 	<script type="text/javascript">
 		window.scrollReveal = new scrollReveal();
+		console.log(scrollReveal);
 		//activate scrollReveal.js
 	</script>
 
 </body>
-
-  <!--
-
-  <body>
-
-    
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-  </body>
-	-->
 </html>

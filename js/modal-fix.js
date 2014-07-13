@@ -1,4 +1,4 @@
 //modal fix
-$('body').on('hidden.bs.modal', '.modal', function () {
-    $(this).removeData('bs.modal');
-});
+// $('body').on('hidden.bs.modal', '.modal', function () {
+//     $(this).removeData('bs.modal');
+// });
