@@ -29,7 +29,7 @@ Author: Denis Samardjiev
 -------------------------------------------------------------- */
 body {
 	background:#fff;
-	font: normal 18px "Calligraffitti", cursive;
+	font: normal 18px 'Montserrat', sans-serif;
 	font-weight: 300;
 	color: #545454;
 	height: 100% !important;
