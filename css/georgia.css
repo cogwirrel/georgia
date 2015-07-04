@@ -1,0 +1,20 @@
+
+.georgias-face {
+	width: 200px;
+	border-radius: 50%;
+}
+
+.about-georgia-picture {
+	width: 100%;
+	max-width: 400px;
+	border-radius: 5px;
+}
+
+.portfolio-item {
+	width: 100%;
+	height: auto;
+}
+
+#orchestra-audio {
+	display: hidden;
+}

@@ -39,6 +39,8 @@
 	    	'slide2':     		'img/slider/slide2.jpg',
 	    	'slide3':     		'img/slider/slide3.jpg',
 	        'quote1':     		'img/quote/bg.jpg',
+	        'georgia-about':    'img/georgia-about.jpg',
+	        'georgia':          'img/georgia.jpg',
 	    };
 
 	    // config
@@ -49,12 +51,18 @@
 	        showInfo:   false,
 	        background: ['#272727'],
 	        onComplete: function() {
+	        	$('#orchestra-audio').animate({volume: 0}, 2000);
 	        	 window.setTimeout(function() {
 	        	 	console.log("refreshing skrollr");
 	        	 	window.skrl.refresh();
 	        	 }, 2000);
 	        }
 	    });
+
+	    $(document).ready(function() {
+	    	$('#orchestra-audio').trigger('play');
+	    });
+
 	</script>
 
 	<!-- Icon Fonts -->
@@ -65,6 +73,10 @@
 
   <body class="" data-spy="scroll" data-target="#myScrollSpy" data-offset="200">
 
+  <audio id="orchestra-audio">
+  	<source src="audio/loading.mp3" type="audio/mpeg">
+  </audio>
+
 	<!-- Begin Carousel -->
 	<div id="mainCarousel" class="carousel slide" data-ride="carousel">
 
@@ -74,14 +86,14 @@
 			<div class="item active">
 				<div id="slide1" class="fill skrollable" style="background-image: url(img/slider/slide1.jpg)" data-700="background-position: 50% -300px;" data-0="background-position: 50% 0px;" data-anchor-target=".carousel h1">
 					<div class="container text-center center-vertically">
-			    		<p class="slider-description">Something something I'm amazing</p>
+			    		<p class="slider-description">Composer, Orchestrator, Arranger</p>
 			    		<hr class="carousel-hr">
 						<div>
 							<h1 id="carousel-h1-1" class="carousel-h1">Georgia Scott</h1>
 						</div>
 						<hr class="carousel-hr">
-						<a href="#" data-id="section2" class="btn btn-default bolt-button-light scroll-link" style="margin-top:10px;">
-							Portfolio &nbsp;&nbsp;<span class="ion-ios7-arrow-down"></span>
+						<a href="#" data-id="section1" class="btn btn-default bolt-button-light scroll-link" style="margin-top:10px;">
+							About Me &nbsp;&nbsp;<span class="ion-ios7-arrow-down"></span>
 						</a>
 					</div>
 				</div>
@@ -90,15 +102,13 @@
 			<div class="item">
 				<div id="slide2" class="fill skrollable" style="background-image: url(img/slider/slide2.jpg)" data-700="background-position: 50% -300px;" data-0="background-position: 50% 0px;" data-anchor-target=".carousel h1">
 					<div class="container text-center center-vertically">
-			    		<p class="slider-description">Seriously I'm amazing</p>
 						<div>
-							<h1 id="carousel-h1-2" class="carousel-h1">Composition or Something</h1>
+							<h1 id="carousel-h1-2" class="carousel-h1">Portfolio</h1>
 						</div>
 						<div class="slider-description col-sm-4 col-sm-offset-4">
-							Wow look at me, I'm so great, you should hire me for lots of money.
 							<hr class="carousel-hr">
-							<a href="#" data-id="section6" class="btn btn-default bolt-button-light scroll-link" style="margin-top:10px;">
-								Contact &nbsp;&nbsp;<span class="ion-ios7-arrow-down"></span>
+							<a href="#" data-id="section2" class="btn btn-default bolt-button-light scroll-link" style="margin-top:10px;">
+								View My Work &nbsp;&nbsp;<span class="ion-ios7-arrow-down"></span>
 							</a>
 						</div>
 					</div>
@@ -108,12 +118,14 @@
 			<div class="item">
 				<div id="slide3" class="fill skrollable" style="background-image: url(img/slider/slide3.jpg)" data-700="background-position: 50% -300px;" data-0="background-position: 50% 0px;" data-anchor-target=".carousel h1">
 					<div class="container text-center center-vertically">
-			    		<p class="slider-description">Did you know that I'm</p>
 						<div>
-							<h1 id="carousel-h1-3" class="carousel-h1">Seriously Cool</h1>
+							<h1 id="carousel-h1-3" class="carousel-h1">Contact</h1>
 						</div>
 						<div class="slider-description col-sm-4 col-sm-offset-4">
-							Like cooler than you can imagine.
+							<hr class="carousel-hr">
+							<a href="#" data-id="section6" class="btn btn-default bolt-button-light scroll-link" style="margin-top:10px;">
+								Get In Touch &nbsp;&nbsp;<span class="ion-ios7-arrow-down"></span>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -179,9 +191,11 @@
 					<div class="col-lg-10 col-lg-offset-1">
 						<h3 data-scroll-reveal="enter left and move 50px over 1.2s" >Georgia Scott - Composer</h3>
 						<hr data-scroll-reveal="" >
-						<p data-scroll-reveal="" >I'm Georgia and I go to the Royal College of Music and I can do composition so please hire me.</p>
-						<a data-scroll-reveal="enter right and move 50px over 1.2s" href="#" data-id="section3" class="btn btn-default bolt-button-dark scroll-link" >
-							About Me &nbsp;&nbsp;<span class="ion-ios7-arrow-down"></span>
+						<img data-scroll-reveal="enter right and move 50px over 1.2s" class="georgias-face" src="img/georgia.jpg">
+						<hr data-scroll-reveal="" >
+						<p data-scroll-reveal="" >Hi I'm Georgia! I'm a freelance composer, orchestrator and arranger, recently graduated from The Royal College of Music.</p>
+						<a data-scroll-reveal="enter left and move 50px over 1.2s" href="#" data-id="section3" class="btn btn-default bolt-button-dark scroll-link" >
+							A Bit More About Me &nbsp;&nbsp;<span class="ion-ios7-arrow-down"></span>
 						</a>
 					</div>
 				</div>
@@ -201,9 +215,9 @@
 			<!-- Page Title -->
 			<div class="row page-title-2">
 				<div class="col-lg-12">
-					<h3>Portfolio</h3>
+					<h3 data-scroll-reveal="enter left and move 50px over 1.2s">Portfolio</h3>
 					<hr>
-					<p>Here's some of the stuff that I have composed.</p>
+					<p data-scroll-reveal="enter right and move 50px over 1.2s">A sample of my work...</p>
 				</div>
 			</div>
 
@@ -211,42 +225,41 @@
 			<div data-scroll-reveal="enter left and move 50px over 1s" class="container text-center" >
 			  <ul class="nav nav-pills">
 			    <li class="filter active" data-filter="all">All</li>
-			    <li class="filter" data-filter="concerto">Concertos</li>
-			    <li class="filter" data-filter="ballet">Ballets</li>
-			    <li class="filter" data-filter="musical">Musical Theatre</li>
-			    <li class="filter" data-filter="orchestration">Orchestration</li>
+			    <li class="filter" data-filter="theatre">Theatre</li>
+			    <li class="filter" data-filter="film">Film</li>
+			    <li class="filter" data-filter="concert">Concert</li>
 			  </ul>
 			</div>
 
 			<!-- Portfolio Items -->
 			<div class="container port-holder">
 			  <ul id="myPortfolio" class="no-padding">
-			    <li class="item musical col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
-			    	<iframe width="100%" height="380" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>				
+			    <li class="item theatre col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
+			    	<iframe class="portfolio-item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>				
 			    </li>
-			    <li class="item ballet col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
-			    	<iframe width="100%" height="380" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+			    <li class="item film col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
+			    	<iframe class="portfolio-item" src="https://www.youtube.com/embed/u_JtTa23wlw" frameborder="0" allowfullscreen></iframe>
 			    </li>
-			    <li class="item concerto col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
-			    	<iframe width="100%" height="380" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+			    <li class="item theatre col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
+			    	<iframe class="portfolio-item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 			    </li>
-			    <li class="item musical orchestration col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
-			    	<iframe width="100%" height="380" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+			    <li class="item concert orchestration col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
+			    	<iframe class="portfolio-item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 			    </li>
-			    <li class="item concerto col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
-			    	<iframe width="100%" height="380" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+			    <li class="item concert col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
+			    	<iframe class="portfolio-item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 			    </li>
-			    <li class="item musical col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
-			    	<iframe width="100%" height="380" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+			    <li class="item theatre col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
+			    	<iframe class="portfolio-item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 			    </li>
-			    <li class="item ballet col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
-			    	<iframe width="100%" height="380" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+			    <li class="item film col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
+			    	<iframe class="portfolio-item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 			    </li>
-			    <li class="item concerto orchestration col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
-			    	<iframe width="100%" height="380" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+			    <li class="item film orchestration col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
+			    	<iframe class="portfolio-item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 			    </li>
-			    <li class="item ballet orchestration col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
-			    	<iframe width="100%" height="380" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+			    <li class="item concert orchestration col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
+			    	<iframe class="portfolio-item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 			    </li>
 			  </ul>
 			</div>
@@ -295,7 +308,7 @@
 					<p data-scroll-reveal="enter top and move 50px over 1s" class="quote-content" >
 						Like what you hear?
 					</p>
-					<a href="#" data-id="section6" class="btn btn-default bolt-button-light scroll-link" style="margin-top:10px;">
+					<a data-scroll-reveal="enter bottom and move 50px over 1.2s" href="#" data-id="section6" class="btn btn-default bolt-button-light scroll-link" style="margin-top:10px;">
 						Get in Touch &nbsp;&nbsp;<span class="ion-ios7-arrow-down"></span>
 					</a>
 				</div>
@@ -318,30 +331,28 @@
 
 					<!-- Page Title -->
 					<div class="col-lg-10 col-lg-offset-1 page-title-2">
-						<h3>About Me</h3>
+						<h3 data-scroll-reveal="enter left and move 50px over 1.2s">About Me</h3>
 						<hr>
-						<p>A talented composer blah blah blah</p>
 					</div>
 
-					<!-- The Team -->
-					<div data-scroll-reveal="enter bottom and move 50px over 1.2s" class="col-sm-10 col-sm-offset-1" >
-						<h5>Who am I</h5>
-						<p>I'm Georgia and I'm really good at composition. Did I mention that I am at RCM already? Probably, but still I'm going to say it again mwahahahaha!</p>
+					<div class="col-sm-6 col-sm-offset-1">
+						<div class="row">
+							<div data-scroll-reveal="enter bottom and move 50px over 1.2s" class="col-sm-12" >
+								<h5>Who am I</h5>
+								<p>I'm a young Australian composer, orchestrator and arranger, with a passion for music for theatre and film. I recently graduated from The Royal College of Music, where I was a scholar supported by the Henry Wood Trust Award.</p>
+							</div>
+
+							<div data-scroll-reveal="enter top and move 50px over 1.2s" class="col-sm-12" >
+								<h5>Experience</h5>
+								<p>I have been lucky enough to have my compositions premierred in some great venues, such as the Sydney Opera House, The National Portrait Gallery, St Martin-in-the-Fields. I have also worked with the estate of film composer Michael Kamen, archiving his scores.</p>
+							</div> 
+						</div>
+						
 					</div>
 
-					<!-- Who We Are-->
-					<div data-scroll-reveal="enter top and move 50px over 1.2s" class="col-sm-4 col-sm-offset-1" >
-						<h5>Experience</h5>
-						<p>I have had lots of experience in writing all sorts of cool things such as ballets.</p>
-					</div> 
-
-					<!-- Goals -->
-					<div data-scroll-reveal="enter bottom and move 50px over 1.2s" class="col-sm-6" >
-						<h5>Interests</h5>
-						<p>I am interested in anything that keeps me occupied so that I don't have to see my boyfriend - yuck!</p>
-					</div>
-
-					
+					<div class="col-sm-4">
+						<img data-scroll-reveal="enter right and move 50px over 1.2s" class="about-georgia-picture" src="img/georgia-about.jpg">
+					</div>					
 
 				</div>
 
