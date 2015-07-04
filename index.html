@@ -52,18 +52,19 @@
 			background: ['#272727'],
 			onComplete: function() {
 				window.setTimeout(function() {
+					$('#orchestra-audio').animate({volume: 0}, 1500);
+				}, 500);
+				window.setTimeout(function() {
 					console.log("refreshing skrollr");
-					window.skrl.refresh();
+					//window.skrl.refresh();
 				}, 2000);
 			}
 		});
 
 		function playLoadingAudio() {
 			// Ease in the audio
-			$('#orchestra-audio').animate({volume: 0}, 1);
-			$('#orchestra-audio').animate({volume: 100}, 400);
 			$('#orchestra-audio').trigger('play');
-
+			$('#orchestra-audio').animate({volume: 1}, 400);
 		}
 
 	</script>
@@ -76,7 +77,7 @@
 
   <body class="" data-spy="scroll" data-target="#myScrollSpy" data-offset="200">
 
-  <audio id="orchestra-audio" oncanplay="playLoadingAudio()">
+  <audio id="orchestra-audio" oncanplay="playLoadingAudio()" volume="0">
 	<source src="audio/loading.mp3" type="audio/mpeg">
   </audio>
 
