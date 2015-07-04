@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Georgia Scott</title>
-    <meta property="og:title" content="Georgia Scott" />
-    <meta property="og:site_name" content="Georgia Scott" />
-    <meta property="og:image" content="" />
-    <meta property="og:description" content="DESCRIPTION" />
-    <meta property="og:url" content="http://georgiascott.co.uk" />
-    <meta property="og:type" content="website" />
-    <meta name="description" content="DESCRIPTION">
-    <meta name="keywords" content="Georgia, Scott, Georgia Scott, Composer, RCM, Royal College of Music, Composition">
-    <meta name="author" content="Georgia Scott">
-    <!--<link rel="shortcut icon" type="image/ico" href="favicon.ico" />-->
+	<title>Georgia Scott</title>
+	<meta property="og:title" content="Georgia Scott" />
+	<meta property="og:site_name" content="Georgia Scott" />
+	<meta property="og:image" content="" />
+	<meta property="og:description" content="DESCRIPTION" />
+	<meta property="og:url" content="http://georgiascott.co.uk" />
+	<meta property="og:type" content="website" />
+	<meta name="description" content="DESCRIPTION">
+	<meta name="keywords" content="Georgia, Scott, Georgia Scott, Composer, RCM, Royal College of Music, Composition">
+	<meta name="author" content="Georgia Scott">
+	<!--<link rel="shortcut icon" type="image/ico" href="favicon.ico" />-->
 
 
-    
-    <!-- Stylesheets -->
+	
+	<!-- Stylesheets -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/georgia.css" rel="stylesheet">
@@ -34,47 +34,50 @@
 	<script type="text/javascript">
 
 		// Change to your image paths
-	    var images = {
-	    	'slide1':     		'img/slider/slide1.jpg',
-	    	'slide2':     		'img/slider/slide2.jpg',
-	    	'slide3':     		'img/slider/slide3.jpg',
-	        'quote1':     		'img/quote/bg.jpg',
-	        'georgia-about':    'img/georgia-about.jpg',
-	        'georgia':          'img/georgia.jpg',
-	    };
+		var images = {
+			'slide1':     		'img/slider/slide1.jpg',
+			'slide2':     		'img/slider/slide2.jpg',
+			'slide3':     		'img/slider/slide3.jpg',
+			'quote1':     		'img/quote/bg.jpg',
+			'georgia-about':    'img/georgia-about.jpg',
+			'georgia':          'img/georgia.jpg',
+		};
 
-	    // config
-	    Royal_Preloader.config({
-	        mode:       'text',
-	        images:     images,
-	        timeout:    10,
-	        showInfo:   false,
-	        background: ['#272727'],
-	        onComplete: function() {
-	        	$('#orchestra-audio').animate({volume: 0}, 2000);
-	        	 window.setTimeout(function() {
-	        	 	console.log("refreshing skrollr");
-	        	 	window.skrl.refresh();
-	        	 }, 2000);
-	        }
-	    });
+		// config
+		Royal_Preloader.config({
+			mode:       'text',
+			images:     images,
+			timeout:    10,
+			showInfo:   false,
+			background: ['#272727'],
+			onComplete: function() {
+				window.setTimeout(function() {
+					console.log("refreshing skrollr");
+					window.skrl.refresh();
+				}, 2000);
+			}
+		});
 
-	    $(document).ready(function() {
-	    	$('#orchestra-audio').trigger('play');
-	    });
+		function playLoadingAudio() {
+			// Ease in the audio
+			$('#orchestra-audio').animate({volume: 0}, 1);
+			$('#orchestra-audio').animate({volume: 100}, 400);
+			$('#orchestra-audio').trigger('play');
+
+		}
 
 	</script>
 
 	<!-- Icon Fonts -->
 	<link href="css/ionicons.min.css" rel="stylesheet" type="text/css">
 
-    
+	
   </head>
 
   <body class="" data-spy="scroll" data-target="#myScrollSpy" data-offset="200">
 
-  <audio id="orchestra-audio">
-  	<source src="audio/loading.mp3" type="audio/mpeg">
+  <audio id="orchestra-audio" oncanplay="playLoadingAudio()">
+	<source src="audio/loading.mp3" type="audio/mpeg">
   </audio>
 
 	<!-- Begin Carousel -->
@@ -86,8 +89,8 @@
 			<div class="item active">
 				<div id="slide1" class="fill skrollable" style="background-image: url(img/slider/slide1.jpg)" data-700="background-position: 50% -300px;" data-0="background-position: 50% 0px;" data-anchor-target=".carousel h1">
 					<div class="container text-center center-vertically">
-			    		<p class="slider-description">Composer, Orchestrator, Arranger</p>
-			    		<hr class="carousel-hr">
+						<p class="slider-description">Composer, Orchestrator, Arranger</p>
+						<hr class="carousel-hr">
 						<div>
 							<h1 id="carousel-h1-1" class="carousel-h1">Georgia Scott</h1>
 						</div>
@@ -224,43 +227,43 @@
 			<!-- Portfolio Filter -->
 			<div data-scroll-reveal="enter left and move 50px over 1s" class="container text-center" >
 			  <ul class="nav nav-pills">
-			    <li class="filter active" data-filter="all">All</li>
-			    <li class="filter" data-filter="theatre">Theatre</li>
-			    <li class="filter" data-filter="film">Film</li>
-			    <li class="filter" data-filter="concert">Concert</li>
+				<li class="filter active" data-filter="all">All</li>
+				<li class="filter" data-filter="theatre">Theatre</li>
+				<li class="filter" data-filter="film">Film</li>
+				<li class="filter" data-filter="concert">Concert</li>
 			  </ul>
 			</div>
 
 			<!-- Portfolio Items -->
 			<div class="container port-holder">
 			  <ul id="myPortfolio" class="no-padding">
-			    <li class="item theatre col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
-			    	<iframe class="portfolio-item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>				
-			    </li>
-			    <li class="item film col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
-			    	<iframe class="portfolio-item" src="https://www.youtube.com/embed/u_JtTa23wlw" frameborder="0" allowfullscreen></iframe>
-			    </li>
-			    <li class="item theatre col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
-			    	<iframe class="portfolio-item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-			    </li>
-			    <li class="item concert orchestration col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
-			    	<iframe class="portfolio-item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-			    </li>
-			    <li class="item concert col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
-			    	<iframe class="portfolio-item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-			    </li>
-			    <li class="item theatre col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
-			    	<iframe class="portfolio-item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-			    </li>
-			    <li class="item film col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
-			    	<iframe class="portfolio-item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-			    </li>
-			    <li class="item film orchestration col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
-			    	<iframe class="portfolio-item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-			    </li>
-			    <li class="item concert orchestration col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
-			    	<iframe class="portfolio-item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-			    </li>
+				<li class="item theatre col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
+					<iframe class="portfolio-item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>				
+				</li>
+				<li class="item film col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
+					<iframe class="portfolio-item" src="https://www.youtube.com/embed/u_JtTa23wlw" frameborder="0" allowfullscreen></iframe>
+				</li>
+				<li class="item theatre col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
+					<iframe class="portfolio-item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+				</li>
+				<li class="item concert orchestration col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
+					<iframe class="portfolio-item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+				</li>
+				<li class="item concert col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
+					<iframe class="portfolio-item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+				</li>
+				<li class="item theatre col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
+					<iframe class="portfolio-item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+				</li>
+				<li class="item film col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
+					<iframe class="portfolio-item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+				</li>
+				<li class="item film orchestration col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
+					<iframe class="portfolio-item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+				</li>
+				<li class="item concert orchestration col-xs-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
+					<iframe class="portfolio-item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140666816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+				</li>
 			  </ul>
 			</div>
 
