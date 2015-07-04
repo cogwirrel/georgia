@@ -4,12 +4,12 @@
 	<title>Georgia Scott</title>
 	<meta property="og:title" content="Georgia Scott" />
 	<meta property="og:site_name" content="Georgia Scott" />
-	<meta property="og:image" content="" />
-	<meta property="og:description" content="DESCRIPTION" />
+	<meta property="og:image" content="http://georgiascott.co.uk/img/georgia.png" />
+	<meta property="og:description" content="Georgia Scott - Composer, Orchestrator, Arranger" />
 	<meta property="og:url" content="http://georgiascott.co.uk" />
 	<meta property="og:type" content="website" />
 	<meta name="description" content="DESCRIPTION">
-	<meta name="keywords" content="Georgia, Scott, Georgia Scott, Composer, RCM, Royal College of Music, Composition">
+	<meta name="keywords" content="Georgia, Scott, Georgia Scott, Composer, Orchestrator, Arranger, RCM, Royal College of Music, Composition, London, United Kingdom, England">
 	<meta name="author" content="Georgia Scott">
 	<!--<link rel="shortcut icon" type="image/ico" href="favicon.ico" />-->
 
@@ -22,8 +22,6 @@
 
 	<!-- Fonts -->
 	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700%7cOpen+Sans:400,300,700" rel="stylesheet" type="text/css">
-	<link href='http://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
 
 	<!-- jQuery Files -->
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
@@ -40,7 +38,7 @@
 			'slide3':     		'img/slider/slide3.jpg',
 			'quote1':     		'img/quote/bg.jpg',
 			'georgia-about':    'img/georgia-about.jpg',
-			'georgia':          'img/georgia.jpg',
+			'georgia':          'img/georgia.png',
 		};
 
 		// config
@@ -56,7 +54,7 @@
 				}, 500);
 				window.setTimeout(function() {
 					console.log("refreshing skrollr");
-					//window.skrl.refresh();
+					//window.skrollr.refresh();
 				}, 2000);
 			}
 		});
@@ -77,7 +75,7 @@
 
   <body class="" data-spy="scroll" data-target="#myScrollSpy" data-offset="200">
 
-  <audio id="orchestra-audio" oncanplay="playLoadingAudio()" volume="0">
+  <audio id="orchestra-audio" preload="true" oncanplay="playLoadingAudio()" volume="0">
 	<source src="audio/loading.mp3" type="audio/mpeg">
   </audio>
 
@@ -90,11 +88,11 @@
 			<div class="item active">
 				<div id="slide1" class="fill skrollable" style="background-image: url(img/slider/slide1.jpg)" data-700="background-position: 50% -300px;" data-0="background-position: 50% 0px;" data-anchor-target=".carousel h1">
 					<div class="container text-center center-vertically">
-						<p class="slider-description">Composer, Orchestrator, Arranger</p>
 						<hr class="carousel-hr">
 						<div>
 							<h1 id="carousel-h1-1" class="carousel-h1">Georgia Scott</h1>
 						</div>
+						<p class="slider-description">Composer, Orchestrator, Arranger</p>
 						<hr class="carousel-hr">
 						<a href="#" data-id="section1" class="btn btn-default bolt-button-light scroll-link" style="margin-top:10px;">
 							About Me &nbsp;&nbsp;<span class="ion-ios7-arrow-down"></span>
@@ -195,7 +193,7 @@
 					<div class="col-lg-10 col-lg-offset-1">
 						<h3 data-scroll-reveal="enter left and move 50px over 1.2s" >Georgia Scott - Composer</h3>
 						<hr data-scroll-reveal="" >
-						<img data-scroll-reveal="enter right and move 50px over 1.2s" class="georgias-face" src="img/georgia.jpg">
+						<img data-scroll-reveal="enter right and move 50px over 1.2s" class="georgias-face" src="img/georgia.png">
 						<hr data-scroll-reveal="" >
 						<p data-scroll-reveal="" >Hi I'm Georgia! I'm a freelance composer, orchestrator and arranger, recently graduated from The Royal College of Music.</p>
 						<a data-scroll-reveal="enter left and move 50px over 1.2s" href="#" data-id="section3" class="btn btn-default bolt-button-dark scroll-link" >
@@ -415,7 +413,6 @@
 	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
 	<script type="text/javascript" src="js/portfolio.js"></script>
 	<script type="text/javascript" src="js/navbar.js"></script>
-	<script type="text/javascript" src="js/ticker.js"></script>
 	<script type="text/javascript" src="js/modal-fix.js"></script>
 	<script type="text/javascript" src="js/skrollr.min.js"></script>
 	<script type="text/javascript" src="js/start-skrollr.js"></script>	
