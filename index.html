@@ -49,7 +49,10 @@
 			showInfo:   false,
 			background: ['#272727'],
 			onComplete: function() {
-				$('.carousel').carousel();
+				$('.carousel').carousel({
+					interval: 5001,
+					wrap: true
+				});
 				window.setTimeout(function() {
 					$('#orchestra-audio').animate({volume: 0}, 1500);
 				}, 500);
