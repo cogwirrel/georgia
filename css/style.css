@@ -371,6 +371,7 @@ hr {
 #myPortfolio .item {
   display: none;
   opacity: 0;
+  padding: 5px 5px;
 }
 
 .nav-pills {
