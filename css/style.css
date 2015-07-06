@@ -374,10 +374,13 @@ hr {
   padding: 5px 5px;
 }
 
+.nav-pills-bottom {
+	margin-bottom: 50px;
+}
+
 .nav-pills {
 	font-size: 14px;
 	font-weight: 400;
-	margin-bottom: 50px;
 	font-weight: 300;
 	display: inline-block; 
 }

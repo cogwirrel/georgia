@@ -18,6 +18,17 @@
 	padding: 0px 5px;
 }
 
+.score-title {
+	position: absolute;
+	color: white;
+	font-size: 16px;
+	margin-left: 2px;
+}
+
+.score-iframe {
+	width: 100%;
+}
+
 #orchestra-audio {
 	display: hidden;
 }
