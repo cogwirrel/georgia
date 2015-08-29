@@ -181,6 +181,7 @@
 					<li class="active"><a href="#section1" data-id="section1" class="scroll-link">Georgia Scott</a></li>
 					<li class=""><a href="#section2" data-id="section2" class="scroll-link">Portfolio</a></li>
 					<li class=""><a href="#section3" data-id="section3" class="scroll-link">About Me</a></li>
+					<li class=""><a href="#section4" data-id="section4" class="scroll-link">Social</a></li>
 					<li class=""><a href="#section6" data-id="section6" class="scroll-link">Contact</a></li>
 				</ul>
 			</nav>
@@ -364,6 +365,47 @@
 	</section>
 	<!-- End About Us -->
 
+	<section id="section4">
+
+		<div class="social">
+
+			<div class="container">
+
+				<div class="row">
+
+					<!-- Page Title -->
+					<div class="col-lg-10 col-lg-offset-1 page-title-2">
+						<h3 data-sr="enter left and move 50px over 1.2s">Social</h3>
+						<hr>
+					</div>
+
+					<div class="col-sm-6">
+						<div class="row">
+							<div data-sr="enter left and move 50px over 1.2s" class="col-sm-12" >
+								<a class="twitter-timeline" href="https://twitter.com/GScottComposer" data-widget-id="637746864943669248">Tweets by @GScottComposer</a>
+								<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+							</div>
+						</div>
+						
+					</div>
+					<div class="col-sm-6">
+						<div class="row">
+							<div data-sr="enter right and move 50px over 1.2s" class="col-sm-12" >
+								<div class="fb-page" data-href="https://www.facebook.com/GScottComposer" data-width="500" data-height="500" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/GScottComposer"><a href="https://www.facebook.com/GScottComposer">Georgia Scott - Composer</a></blockquote></div></div>
+							</div>
+						</div>
+						
+					</div>	
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+
+
 	<!-- Begin Contact -->
 	<section id="section6">
 
@@ -430,6 +472,15 @@
 		console.log(scrollReveal);
 		//activate scrollReveal.js
 	</script>
+	<!-- Facebook SDK -->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=351891494884748";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 
 </body>
 </html>

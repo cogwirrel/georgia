@@ -538,6 +538,20 @@ span.portfolio-hover span {
 	padding-top: 25px;
 }
 
+.social { padding:120px 0 120px 0; }
+
+.social h5{
+	padding-top: 25px;
+}
+
+.twitter-timeline {
+	margin: 0 auto
+}
+
+.fb-page {
+	margin: 0 auto
+}
+
 /* =Quote
 -------------------------------------------------------------- */
 .quote { padding:70px 0 70px 0; background-image:url(../img/piano.jpg); background-size: cover; color:#fff; text-align:center; }
@@ -745,7 +759,7 @@ span.portfolio-hover span {
 
 /* =Contact
 -------------------------------------------------------------- */
-.contact { padding:120px 0 120px 0; }
+.contact { padding:120px 0 120px 0; background-color:#f1f1f1; }
 
 .contact-info {
 	text-align: center;
