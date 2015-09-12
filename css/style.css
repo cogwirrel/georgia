@@ -362,7 +362,12 @@ hr {
 
 /* =Summary
 -------------------------------------------------------------- */
-.summary { padding: 120px 0 120px 0; background-color: #f1f1f1; text-align: center; }
+.summary { padding: 120px 0 120px 0; text-align: center; }
+
+#undercurrent { background-color: #f1f1f1; }
+.undercurrent { padding: 120px 0 120px 0; }
+.undercurrent-header { text-align: center; }
+.undercurrent-indiegogo { display: block; text-align: center; }
 
 /* =Portfolio
 -------------------------------------------------------------- */
