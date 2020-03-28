@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Georgia Scott</title>
+    <meta property="og:title" content="Georgia Scott" />
+    <meta property="og:site_name" content="Georgia Scott" />
+    <meta property="og:image" content="https://georgiascott.co.uk/img/georgia.png" />
+    <meta property="og:description" content="Georgia Scott - Composer, Orchestrator, Arranger" />
+    <meta property="og:url" content="https://georgiascott.co.uk" />
+    <meta property="og:type" content="website" />
+    <meta name="description" content="DESCRIPTION">
+    <meta name="keywords" content="Georgia, Scott, Georgia Scott, Composer, Orchestrator, Arranger, RCM, Royal College of Music, Composition, London, United Kingdom, England, Australia, Australian, Sydney, Contemporary, Ballet, Musical, Theatre, Film, Music, Transcriber, Transcription">
+    <meta name="author" content="Georgia Scott">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicons! -->
+    <link rel="icon" type="image/ico" href="/img/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+
+    <!-- Stylesheets -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/georgia.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cOpen+Sans:400,300,700" rel="stylesheet" type="text/css">
+
+    <!-- jQuery Files -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.js"></script>
+
+    <!-- Royal Preloader -->
+    <link rel="stylesheet" type="text/css" href="/css/royal_preloader.css">
+    <script type="text/javascript" src="/js/royal_preloader.min.js"></script>
+    <script type="text/javascript">
+
+        // Change to your image paths
+        var images = {
+            'georgia':          '/img/georgia.png',
+            'slide1':           '/img/pencil.jpg',
+            'slide2':           '/img/recorder.jpg',
+            'slide3':           '/img/piano.jpg',
+            'quote1':           '/img/score.jpg',
+            'georgia-about':    '/img/georgia-about.jpg',
+        };
+
+        // config
+        Royal_Preloader.config({
+            mode:       'text',
+            images:     images,
+            timeout:    120,
+            showInfo:   false,
+            background: ['#272727'],
+            onComplete: function() {
+                $('.carousel').carousel({
+                    interval: 5001,
+                    wrap: true
+                });
+                window.setTimeout(function() {
+                    $('#orchestra-audio').animate({volume: 0}, 1500);
+                }, 500);
+                window.setTimeout(function() {
+                    console.log("refreshing skrollr");
+                    //window.skrollr.refresh();
+                }, 2000);
+            }
+        });
+
+        function playLoadingAudio() {
+            // Ease in the audio
+            $('#orchestra-audio').trigger('play');
+            $('#orchestra-audio').animate({volume: 1}, 400);
+        }
+
+    </script>
+
+    <!-- Icon Fonts -->
+    <link href="/css/ionicons.min.css" rel="stylesheet" type="text/css">
+
+    
+  </head>
+
+  <body class="" data-spy="scroll" data-target="#myScrollSpy" data-offset="200">
+
+  <audio id="orchestra-audio" preload="true" oncanplay="playLoadingAudio()" volume="0">
+    <source src="/audio/loading.mp3" type="audio/mpeg">
+  </audio>
+
+
+    <!-- Begin Navigation -->
+    <div class="navbar">
+
+        <div class="container">
+
+            <div class="navbar-header">
+
+                <!-- Brand -->
+                <a href="javascript:void(0);" class="navbar-brand scroll-top">
+                    <span class="ion-ios7-musical-notes logo-icon"></span>
+                </a>
+
+                <!-- Mobile Navigation -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                    <span class="ion-navicon toggle-icon"></span>
+                </button>
+
+            </div>
+
+            <!-- Main Navigation -->
+            <nav class="navbar-collapse collapse navHeaderCollapse" id="myScrollSpy" role="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#section1" data-id="section1" class="scroll-link">Bio</a></li>
+                    <li class=""><a href="#section2" data-id="section2" class="scroll-link">Select Works</a></li>
+                    <li class=""><a href="#section3" data-id="section3" class="scroll-link">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </div>
+    <!-- End Navigation -->
+
+    <!-- Begin Summary -->
+    <section id="section1">
+    
+        <div class="summary">
+
+            <div class="container">
+
+                <!-- Content -->
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1">
+                        <h3 data-sr="enter left and move 50px over 1.2s" >Georgia Scott</h3>
+                        <hr data-sr="" >
+                        <img data-sr="enter right and move 50px over 1.2s" class="georgias-face" src="/img/georgia.png">
+                        <hr data-sr="" >
+                        <p data-sr="" >Hi I'm Georgia! I'm a freelance composer, orchestrator and arranger. I'm currently studying at the Sydney Conservatorium of Music, and graduated from The Royal College of Music, London in 2015.</p>
+
+                    </div>
+                </div>
+
+                <hr />
+
+                <div class="row">
+
+                    <div class="col-sm-6 col-sm-offset-1">
+                        <div class="row">
+                            <div data-sr="enter bottom and move 50px over 1.2s" class="col-sm-12" >
+                                <h5>Who am I</h5>
+                                <p>I'm a young Australian composer, orchestrator and arranger, with a passion for music, theatre and film. I am studying at the Syndey Conservatorium of Music as part of the Composing Women Program 2018/19, where I am supported by the Doris Burnett Ford scholarship. I graduated with an honours in Composition from The Royal College of Music, London in 2015.</p>
+                            </div>
+
+                            <div data-sr="enter top and move 50px over 1.2s" class="col-sm-12" >
+                                <h5>Experience</h5>
+                                <p>I have been lucky enough to have my compositions premiered in some great venues, such as the Sydney Opera House, The National Portrait Gallery, St Martin-in-the-Fields. I was excited to work with Moorambilla Voices in 2017. In 2018/19 I'll be working with Claire Chase, the Sydney Chamber Opera and the Sydney Symphony Orchestra, both as a composer and orchestrator. I have also worked with the estate of film composer Michael Kamen, archiving his scores.</p>
+                            </div> 
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-4">
+                        <img data-sr="enter right and move 50px over 1.2s" class="about-georgia-picture" src="/img/georgia-about.jpg">
+                    </div>                  
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    
+    <!-- End Summary -->
+
+    <!-- Begin Portfolio -->
+    <section id="section2">
+
+        <div class="container portfolio">
+
+            <!-- Page Title -->
+            <div class="row page-title-2">
+                <div class="col-lg-12">
+                    <h3 data-sr="enter left and move 50px over 1.2s">Select Works</h3>
+                    <hr>
+                </div>
+            </div>
+
+            <!-- Portfolio Filter -->
+            <div data-sr="enter left and move 50px over 1s" class="container text-center" >
+              <ul class="nav nav-pills">
+                <li class="filter active" data-filter="all">All</li>
+                <li class="filter" data-filter="score">Scores</li>
+                <li class="filter" data-filter="audio">Audio</li>
+                <li class="filter" data-filter="video">Video</li>
+              </ul>
+            </div>
+
+            <hr>
+
+            <!-- Portfolio Items -->
+            <div class="container port-holder">
+              <ul id="myPortfolio" class="no-padding">
+
+                <!-- My3LiNAti0nS -->
+                <li class="item concert video col-xs-12 col-md-6 col-lg-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
+                    <iframe class="portfolio-item" scrolling="no" frameborder="no" src="https://www.youtube.com/embed/TRDlFJaqglM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </li>
+
+                <!-- My3LiNAti0nS score -->
+                <li class="item concert score col-xs-12 col-md-6 col-lg-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
+                    <div class="portfolio-item">
+                        <p class="score-title">My3LiNAti0nS</p>
+                        <iframe class="score-iframe" src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=fu9qra2sk" seamless="seamless" scrolling="no" frameBorder="0" allowFullScreen></iframe>
+                    </div>
+                </li>
+
+              </ul>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- End Portfolio -->
+
+
+    <!-- Begin Contact -->
+    <section id="section3">
+
+        <div class="contact">
+
+            <div class="container">
+
+                <!-- Page Title -->
+                <div class="col-lg-10 col-lg-offset-1 page-title">
+                    <h3 data-sr="enter left and move 50px over 1.2s">Contact</h3>
+                    <hr>
+                    <p data-sr="">Please get in touch if you'd like more information!</p>
+                    <p data-sr="">
+                        <i class="contact-icon ion-ios7-email-outline"></i>
+                        <br>
+                        <a href="mailto:georgia@georgiascott.co.uk">georgia@georgiascott.co.uk</a>
+                    </p>
+                    <p data-sr="">
+                        <i class="contact-icon ion-ios7-telephone-outline"></i>
+                        <br>
+                        <a href="tel:+61497497998">+61 497 497 998</a>
+                    </p>
+                    <hr>
+                    <p data-sr="">
+                        <a class="social-icon-facebook" href="https://www.facebook.com/GScottComposer"><i class="contact-icon ion-social-facebook"></i></a>
+                        &nbsp;
+                        <a class="social-icon-twitter" href="https://www.twitter.com/GScottComposer"><i class="contact-icon ion-social-twitter"></i></a>
+                        &nbsp;
+                        <a class="social-icon-linkedin" href="https://uk.linkedin.com/pub/georgia-scott/102/955/a9"><i class="contact-icon ion-social-linkedin"></i></a>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- End Contact -->
+
+    <!-- Begin Footer -->
+    <footer id="footer">
+
+        <div class="container">
+            
+            <!-- Copyright And Social -->
+            <div class="col-sm-5">
+                <p class="copyright no-margin">Copyright &copy; 2020 Georgia Scott. All Rights Reserved.</p>
+            </div>
+
+            <!-- Go To Top -->
+            <div class="col-sm-2 text-center">
+                <p class="no-margin" style="text-align: center"><span class="ion-ios7-arrow-up up-icon scroll-top" style="display: inline-block;"></span></p>
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- End Footer --> 
+
+    <!-- Javascript Files -->
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.mixitup.min.js"></script>
+    <script type="text/javascript" src="/js/portfolio.js"></script>
+    <script type="text/javascript" src="/js/navbar.js"></script>
+    <script type="text/javascript" src="/js/modal-fix.js"></script>
+    <script type="text/javascript" src="/js/skrollr.min.js"></script>
+    <script type="text/javascript" src="/js/start-skrollr.js"></script>  
+    <script type="text/javascript" src="/js/scrollReveal.js"></script>
+    <script type="text/javascript">
+        window.scrollReveal = new scrollReveal();
+        console.log(scrollReveal);
+        //activate scrollReveal.js
+    </script>
+    <!-- Facebook SDK -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=351891494884748";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-66907392-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+</body>
+</html>
