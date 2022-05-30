@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
 	<title>Georgia Scott</title>
 	<meta charset="utf-8">
@@ -54,7 +54,7 @@
 			background: ['#272727'],
 			onComplete: function() {
 				$('.carousel').carousel({
-					interval: 5001,
+					interval: 0,
 					wrap: true
 				});
 				window.setTimeout(function() {
@@ -94,32 +94,32 @@
 		<div class="carousel-inner">
 
 			<div class="item active">
-				<div id="slide1" class="fill skrollable" style="background-image: url(img/score.jpg)" data-700="background-position: 50% -200px;" data-0="background-position: 50% 0px;" data-anchor-target=".carousel h1">
+				<div id="slide1" class="fill skrollable" style="background-image: url(img/score.jpg)" data-700="background-position: 50% -200px;" data-0="background-position: 50% 0px;" data-anchor-target=".carousel h1" aria-labelledby="carousel-h1-1">
 					<div class="container text-center center-vertically">
-						<hr class="carousel-hr">
+						<hr class="carousel-hr" aria-hidden="true">
 						<div>
 							<h1 id="carousel-h1-1" class="carousel-h1">Georgia Scott</h1>
 						</div>
-						<p class="slider-description">Composer, Orchestrator, Arranger</p>
-						<hr class="carousel-hr">
-						<a href="#" data-id="section1" class="btn btn-default bolt-button-dark scroll-link" style="margin-top:10px;">
-							About Me &nbsp;&nbsp;<span class="ion-ios7-arrow-down"></span>
+						<p class="slider-description" aria-labelledby="carousel-h1-1">Composer, Orchestrator, Arranger</p>
+						<hr class="carousel-hr" aria-hidden="true">
+						<a href="#" data-id="section1" class="btn btn-default bolt-button-dark scroll-link" style="margin-top:10px;" role="link" aria-label="About me">
+							About Me<span aria-hidden="true">&nbsp;&nbsp;&nbsp;</span><span class="ion-ios7-arrow-down" aria-hidden="true"></span>
 						</a>
 					</div>
 				</div>
 			</div>
 
 			<div class="item">
-				<div id="slide2" class="fill skrollable" style="background-image: url(img/recorder.jpg)" data-700="background-position: 50% -200px;" data-0="background-position: 50% 0px;" data-anchor-target=".carousel h1">
+				<div id="slide2" class="fill skrollable" style="background-image: url(img/recorder.jpg)" data-700="background-position: 50% -200px;" data-0="background-position: 50% 0px;" data-anchor-target=".carousel h1" aria-labelledby="carousel-h1-2">
 					<div class="container text-center center-vertically">
-						<hr class="carousel-hr">
+						<hr class="carousel-hr" aria-hidden="true">
 						<div>
 							<h1 id="carousel-h1-2" class="carousel-h1">Portfolio</h1>
 						</div>
 						<div class="slider-description col-sm-4 col-sm-offset-4">
-							<hr class="carousel-hr">
-							<a href="#" data-id="section2" class="btn btn-default bolt-button-dark scroll-link" style="margin-top:10px;">
-								View My Work &nbsp;&nbsp;<span class="ion-ios7-arrow-down"></span>
+							<hr class="carousel-hr" aria-hidden="true">
+							<a href="#" data-id="section2" class="btn btn-default bolt-button-dark scroll-link" style="margin-top:10px;" role="link" aria-label="View my work">
+								View My Work<span aria-hidden="true">&nbsp;&nbsp;&nbsp;</span><span class="ion-ios7-arrow-down" aria-hidden="true"></span>
 							</a>
 						</div>
 					</div>
@@ -127,16 +127,16 @@
 			</div>
 
 			<div class="item">
-				<div id="slide3" class="fill skrollable" style="background-image: url(img/pencil.jpg)" data-700="background-position: 50% -200px;" data-0="background-position: 50% 0px;" data-anchor-target=".carousel h1">
+				<div id="slide3" class="fill skrollable" style="background-image: url(img/pencil.jpg)" data-700="background-position: 50% -200px;" data-0="background-position: 50% 0px;" data-anchor-target=".carousel h1" aria-labelledby="carousel-h1-3">
 					<div class="container text-center center-vertically">
-						<hr class="carousel-hr">
+						<hr class="carousel-hr" aria-hidden="true">
 						<div>
 							<h1 id="carousel-h1-3" class="carousel-h1">Contact</h1>
 						</div>
 						<div class="slider-description col-sm-4 col-sm-offset-4">
-							<hr class="carousel-hr">
-							<a href="#" data-id="section6" class="btn btn-default bolt-button-dark scroll-link" style="margin-top:10px;">
-								Get In Touch &nbsp;&nbsp;<span class="ion-ios7-arrow-down"></span>
+							<hr class="carousel-hr" aria-hidden="true">
+							<a href="#" data-id="section6" class="btn btn-default bolt-button-dark scroll-link" style="margin-top:10px;" role="link" aria-label="Get in touch">
+								Get In Touch<span aria-hidden="true">&nbsp;&nbsp;&nbsp;</span><span class="ion-ios7-arrow-down" aria-hidden="true"></span>
 							</a>
 						</div>
 					</div>
@@ -146,12 +146,12 @@
 		</div>
 
 		<!-- Controls -->
-		<a class="left carousel-control" href="#mainCarousel" data-slide="prev">
-			<span class="ion-ios7-arrow-left carousel-arrow"></span>
+		<a class="left carousel-control" href="#mainCarousel" data-slide="prev" role="link" aria-label="Scroll left">
+			<span class="ion-ios7-arrow-left carousel-arrow" aria-hidden="true"></span>
 		</a>
 
-		<a class="right carousel-control" href="#mainCarousel" data-slide="next">
-			<span class="ion-ios7-arrow-right carousel-arrow"></span>
+		<a class="right carousel-control" href="#mainCarousel" data-slide="next" role="link" aria-label="Scroll right">
+			<span class="ion-ios7-arrow-right carousel-arrow" aria-hidden="true"></span>
 		</a>
 
 	</div>
@@ -165,26 +165,26 @@
 			<div class="navbar-header">
 
 				<!-- Brand -->
-				<a href="javascript:void(0);" class="navbar-brand scroll-top">
-					<span class="ion-ios7-musical-notes logo-icon"></span>
+				<a href="javascript:void(0);" class="navbar-brand scroll-top" role="link" aria-label="Visit home page">
+					<span class="ion-ios7-musical-notes logo-icon" aria-hidden="true"></span>
 				</a>
 
 				<!-- Mobile Navigation -->
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse" aria-hidden="true" alt="Mobile Navigation">
 					<span class="ion-navicon toggle-icon"></span>
 				</button>
 
 			</div>
 
 			<!-- Main Navigation -->
-			<nav class="navbar-collapse collapse navHeaderCollapse" id="myScrollSpy" role="navigation">
-				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="#section1" data-id="section1" class="scroll-link">Georgia Scott</a></li>
-					<li class=""><a href="#section2" data-id="section2" class="scroll-link">Portfolio</a></li>
-					<li class=""><a href="#section3" data-id="section3" class="scroll-link">About Me</a></li>
-					<li class=""><a href="#section3-2" data-id="section3-2" class="scroll-link">Store</a></li>
-					<li class=""><a href="#section4" data-id="section4" class="scroll-link">Social</a></li>
-					<li class=""><a href="#section6" data-id="section6" class="scroll-link">Contact</a></li>
+			<nav class="navbar-collapse collapse navHeaderCollapse" id="myScrollSpy" role="navigation" aria-label="Main menu">
+				<ul class="nav navbar-nav navbar-right" aria-labelledby="myScrollSpy">
+					<li aria-labelledby="nav-menu-link-home" class="active"><a id="nav-menu-link-home" href="#section1" data-id="section1" class="scroll-link" role="link">Georgia Scott</a></li>
+					<li aria-labelledby="nav-menu-link-portfolio" class=""><a id="nav-menu-link-portfolio" href="#section2" data-id="section2" class="scroll-link" role="link">Portfolio</a></li>
+					<li aria-labelledby="nav-menu-link-about" class=""><a id="nav-menu-link-about" href="#section3" data-id="section3" class="scroll-link" role="link">About Me</a></li>
+					<li aria-labelledby="nav-menu-link-store" class=""><a id="nav-menu-link-store" href="#section3-2" data-id="section3-2" class="scroll-link" role="link">Store</a></li>
+					<li aria-labelledby="nav-menu-link-social" class=""><a id="nav-menu-link-social" href="#section4" data-id="section4" class="scroll-link" role="link">Social</a></li>
+					<li aria-labelledby="nav-menu-link-contact" class=""><a id="nav-menu-link-contact" href="#section6" data-id="section6" class="scroll-link" role="link">Contact</a></li>
 				</ul>
 			</nav>
 
@@ -194,7 +194,7 @@
 	<!-- End Navigation -->
 
 	<!-- Begin Summary -->
-	<section id="section1">
+	<section id="section1" aria-labelledby="section1-h">
 	
 		<div class="summary">
 
@@ -203,12 +203,12 @@
 				<!-- Content -->
 				<div class="row">
 					<div class="col-lg-10 col-lg-offset-1">
-						<h3 data-sr="enter left and move 50px over 1.2s" >Georgia Scott</h3>
-						<hr data-sr="" >
-						<img data-sr="enter right and move 50px over 1.2s" class="georgias-face" src="img/georgia_spots.jpg">
-						<hr data-sr="" >
-						<p data-sr="" >Hi I'm Georgia! I'm a freelance composer, orchestrator and arranger.</p>
-						<a data-sr="enter left and move 50px over 1.2s" href="#" data-id="section3" class="btn btn-default bolt-button-dark scroll-link" >
+						<h3 data-sr="enter left and move 50px over 1.2s" id="section1-h">Georgia Scott</h3>
+						<hr data-sr="" aria-hidden="true">
+						<img data-sr="enter right and move 50px over 1.2s" class="georgias-face" src="img/georgia_spots.jpg" alt="Picture of Georgia Scott">
+						<hr data-sr="" aria-hidden="true">
+						<p data-sr="" aria-label="introduction">Hi I'm Georgia! I'm a freelance composer, orchestrator and arranger.</p>
+						<a data-sr="enter left and move 50px over 1.2s" href="#" data-id="section3" class="btn btn-default bolt-button-dark scroll-link" role="link" aria-label="Read more about me">
 							A Bit More About Me &nbsp;&nbsp;<span class="ion-ios7-arrow-down"></span>
 						</a>
 					</div>
@@ -222,50 +222,50 @@
 	<!-- End Summary -->
 
 	<!-- Begin Portfolio -->
-	<section id="section2">
+	<section id="section2" aria-labelledby="section2-h">
 
 		<div class="container portfolio">
 
 			<!-- Page Title -->
 			<div class="row page-title-2">
 				<div class="col-lg-12">
-					<h3 data-sr="enter left and move 50px over 1.2s">Portfolio</h3>
-					<hr>
-					<p data-sr="enter right and move 50px over 1.2s">A sample of my work...</p>
+					<h3 data-sr="enter left and move 50px over 1.2s" id="section2-h">Portfolio</h3>
+					<hr aria-hidden="true">
+					<p data-sr="enter right and move 50px over 1.2s" aria-label="portfolio introduction">A sample of my work...</p>
 				</div>
 			</div>
 
 			<!-- Portfolio Filter -->
-			<div data-sr="enter left and move 50px over 1s" class="container text-center" >
-			  <ul class="nav nav-pills">
-				<li class="filter active" data-filter="all">All</li>
-				<li class="filter" data-filter="score">Scores</li>
-				<li class="filter" data-filter="audio">Audio</li>
-				<li class="filter" data-filter="video">Video</li>
+			<div data-sr="enter left and move 50px over 1s" class="container text-center">
+			  <ul class="nav nav-pills" role="menu" aria-label="Portfolio media type filter">
+				<li class="filter active" data-filter="all" role="menuitem">All</li>
+				<li class="filter" data-filter="score" role="menuitem" aria-hidden="true">Scores</li>
+				<li class="filter" data-filter="audio" role="menuitem">Audio</li>
+				<li class="filter" data-filter="video" role="menuitem">Video</li>
 			  </ul>
-			  <br>
-			  <ul class="nav nav-pills nav-pills-bottom">
-				<li class="filter" data-filter="theatre">Theatre</li>
-				<li class="filter" data-filter="film">Film</li>
-				<li class="filter" data-filter="concert">Concert</li>
+			  <br aria-hidden="true">
+			  <ul class="nav nav-pills nav-pills-bottom" role="menu" aria-label="Portfolio work type filter">
+				<li class="filter" data-filter="theatre" role="menuitem">Theatre</li>
+				<li class="filter" data-filter="film" role="menuitem">Film</li>
+				<li class="filter" data-filter="concert" role="menuitem">Concert</li>
 			  </ul>
 			</div>
 
 			<!-- Portfolio Items -->
 			<div class="container port-holder">
-			  <ul id="myPortfolio" class="no-padding">
+			  <ul id="myPortfolio" class="no-padding" aria-label="portfolio">
 			  	<!-- Her Dark Marauder https://youtu.be/i-vYStLc0uE -->
-			  	<li class="item concert video col-xs-12 col-md-6 col-lg-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
-					<iframe class="portfolio-item" scrolling="no" frameborder="no" src="https://www.youtube.com/embed/i-vYStLc0uE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			  	<li class="item concert video col-xs-12 col-md-6 col-lg-4 no-padding mix_all" style="display: inline-block; opacity: 1;" aria-labelledby="iframe-her-dark-marauder">
+					<iframe id="iframe-her-dark-marauder" aria-label="Her Dark Marauder Youtube Video" class="portfolio-item" scrolling="no" frameborder="no" src="https://www.youtube.com/embed/i-vYStLc0uE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</li>
 
 				<!-- My3LiNAti0nS -->
-				<li class="item concert video col-xs-12 col-md-6 col-lg-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
-					<iframe class="portfolio-item" scrolling="no" frameborder="no" src="https://www.youtube.com/embed/TRDlFJaqglM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<li class="item concert video col-xs-12 col-md-6 col-lg-4 no-padding mix_all" style="display: inline-block; opacity: 1;" aria-labelledby="iframe-my3linati0ns">
+					<iframe id="iframe-my3linati0ns" aria-label="My3LiNAti0nS Youtube Video" class="portfolio-item" scrolling="no" frameborder="no" src="https://www.youtube.com/embed/TRDlFJaqglM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</li>
 
 				<!-- My3LiNAti0nS score -->
-                <li class="item concert score col-xs-12 col-md-6 col-lg-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
+                <li class="item concert score col-xs-12 col-md-6 col-lg-4 no-padding mix_all" style="display: inline-block; opacity: 1;" aria-hidden="true">
                     <div class="portfolio-item">
                         <p class="score-title">My3LiNAti0nS</p>
                         <iframe class="score-iframe" src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=fu9qra2sk" seamless="seamless" scrolling="no" frameBorder="0" allowFullScreen></iframe>
@@ -273,16 +273,16 @@
                 </li>
 
 			  	<!-- Train -->
-				<li class="item concert audio col-xs-12 col-md-6 col-lg-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
-					<iframe class="portfolio-item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/213271034&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+				<li class="item concert audio col-xs-12 col-md-6 col-lg-4 no-padding mix_all" style="display: inline-block; opacity: 1;" aria-labelledby="iframe-train">
+					<iframe id="iframe-train" aria-label="Train Soundcloud Widget" class="portfolio-item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/213271034&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 				</li>
 				<!-- Daddy -->
-				<li class="item concert audio col-xs-12 col-md-6 col-lg-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
-					<iframe class="portfolio-item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/213413786&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+				<li class="item concert audio col-xs-12 col-md-6 col-lg-4 no-padding mix_all" style="display: inline-block; opacity: 1;" aria-labelledby="iframe-daddy">
+					<iframe id="iframe-daddy" aria-label="Daddy Soundcloud Widget" class="portfolio-item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/213413786&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 				</li>
 
 				<!-- Daddy score -->
-				<li class="item concert score col-xs-12 col-md-6 col-lg-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
+				<li class="item concert score col-xs-12 col-md-6 col-lg-4 no-padding mix_all" style="display: inline-block; opacity: 1;" aria-hidden="true">
 					<div class="portfolio-item">
 						<p class="score-title">Daddy</p>
 						<iframe class="score-iframe" src="//cdn.flipsnack.com/widget/v2/flipsnackwidget.html?hash=ftnsv3jnb&amp;wmode=window&amp;bgcolor=272727&amp;t=1436123094" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowFullScreen="true"></iframe>
@@ -290,7 +290,7 @@
 				</li>
 
 				<!-- Undercurrent -->
-				<li class="item theatre score col-xs-12 col-md-6 col-lg-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
+				<li class="item theatre score col-xs-12 col-md-6 col-lg-4 no-padding mix_all" style="display: inline-block; opacity: 1;" aria-hidden="true">
 					<div class="portfolio-item">
 						<p class="score-title">The Undercurrent</p>
 						<iframe class="score-iframe" src="//cdn.flipsnack.com/widget/v2/flipsnackwidget.html?hash=fdnlrmnpg&amp;wmode=window&amp;bgcolor=272727&amp;t=1436122956" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowFullScreen="true"></iframe>
@@ -298,18 +298,18 @@
 				</li>
 
 				<!-- Grief -->
-				<li class="item concert audio col-xs-12 col-md-6 col-lg-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
-					<iframe class="portfolio-item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/213414606&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+				<li class="item concert audio col-xs-12 col-md-6 col-lg-4 no-padding mix_all" style="display: inline-block; opacity: 1;" aria-labelledby="iframe-grief">
+					<iframe id="iframe-grief" aria-label="Grief Soundcloud Widget" class="portfolio-item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/213414606&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 				</li>
 
 				<!-- Handsom Cab in the Fog -->
-				<li class="item concert audio col-xs-12 col-md-6 col-lg-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
-					<iframe class="portfolio-item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/213419610&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+				<li class="item concert audio col-xs-12 col-md-6 col-lg-4 no-padding mix_all" style="display: inline-block; opacity: 1;" aria-labelledby="iframe-handsom">
+					<iframe id="iframe-handsom" aria-label="Handsom Cab in the Fog Soundcloud Widget" class="portfolio-item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/213419610&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 				</li>
 
 				<!-- Claquette 213469580 -->
-				<li class="item concert audio col-xs-12 col-md-6 col-lg-4 no-padding mix_all" style="display: inline-block; opacity: 1;">
-					<iframe class="portfolio-item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/213469580&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+				<li class="item concert audio col-xs-12 col-md-6 col-lg-4 no-padding mix_all" style="display: inline-block; opacity: 1;" aria-labelledby="iframe-claquette">
+					<iframe id="iframe-claquette" aria-label="Claquette Soundcloud Widget" class="portfolio-item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/213469580&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 				</li>
 			  </ul>
 			</div>
@@ -320,7 +320,7 @@
 	<!-- End Portfolio -->
 
 		<!-- Begin Quote -->
-	<div class="quote skrollable" data-top-bottom="background-position: 50% -400px;" data-bottom-top="background-position: 50% -100px;" data-anchor-target=".quote-content">
+	<div class="quote skrollable" data-top-bottom="background-position: 50% -400px;" data-bottom-top="background-position: 50% -100px;" data-anchor-target=".quote-content" aria-hidden="true">
 
 		<div class="container">
 
@@ -343,7 +343,7 @@
 	<!-- End Quote -->
 
 	<!-- Begin About Us -->
-	<section id="section3">
+	<section id="section3" aria-labelledby="section3-h">
 
 		<div class="about">
 
@@ -353,14 +353,14 @@
 
 					<!-- Page Title -->
 					<div class="col-lg-10 col-lg-offset-1 page-title-2">
-						<h3 data-sr="enter left and move 50px over 1.2s">About Me</h3>
-						<hr>
+						<h3 data-sr="enter left and move 50px over 1.2s" id="section3-h">About Me</h3>
+						<hr aria-hidden="true">
 					</div>
 
 					<div class="col-sm-6 col-sm-offset-1">
 						<div class="row">
 							<div data-sr="enter bottom and move 50px over 1.2s" class="col-sm-12" >
-								<p>
+								<p aria-label="about Georgia Scott">
 									Georgia’s compositions aim to utilise the unique tool music can provide to explore topics that may be divisive or difficult to approach using language. Her previous works have focussed on aspects of identity and lived experience. Born in Sydney, Australia, Georgia studied for her Bachelor’s degree in composition at the Royal College of Music, London, graduating with Honours. She then studied for her Master of Music in Composition at the Sydney Conservatorium of Music where she was supported by the Doris Burnett-Ford Scholarship and was part of the 2018-2019 Composing Women Program. She has had works premiered in venues such as the National Portrait Gallery, London, Dulwich Picture Gallery, St. Martin-in-the-Fields, National Sawdust, and the Sydney Opera House. In recent years, Georgia has worked with ensembles such as the Sydney Symphony Orchestra, Janáček Philharmonic Orchestra, Moorambilla Voices, Gondwana Junior, the Australian World Orchestra, Flautist Claire Chase, the Sydney Symphony Orchestra Fellows, Melbourne Symphony Orchestra, The Australian Ballet, Orchestra Victoria, and Sydney Chamber Opera. In 2021 Georgia will be working with the Sydney Symphony Orchestra Fellows as part of their <a href="https://www.sydneysymphony.com/concerts-and-tickets/whats-on/50-fanfares/georgia-scott">’50 Fanfares’ project</a> and will have works premiered by the Sydney Conservatorium of Music Symphony Orchestra and by Western Australian Youth Orchestras as the recipient of the <a href="https://wayo.net.au/apply-now/carol-day-commission/2020-carol-day-commission-recipient/">2020 Carol Day Commission.</a>
 								</p>
 							</div>
@@ -369,7 +369,7 @@
 					</div>
 
 					<div class="col-sm-4">
-						<img data-sr="enter right and move 50px over 1.2s" class="about-georgia-picture" src="img/georgia-about.jpg">
+						<img data-sr="enter right and move 50px over 1.2s" class="about-georgia-picture" src="img/georgia-about.jpg" alt="Another picture of Georgia Scott">
 					</div>					
 
 				</div>
@@ -381,7 +381,7 @@
 	</section>
 	<!-- End About Us -->
 
-	<section id="section3-1">
+	<section id="section3-1" aria-labelledby="section3-1-h">
 
 		<div class="social">
 
@@ -391,14 +391,14 @@
 
 					<!-- Page Title -->
 					<div class="col-lg-10 col-lg-offset-1 page-title-2">
-						<h3 data-sr="enter left and move 50px over 1.2s">Seidler Diaries</h3>
-						<hr>
+						<h3 data-sr="enter left and move 50px over 1.2s" id="section3-1-h">Seidler Diaries</h3>
+						<hr aria-hidden="true">
 					</div>
 
 					<div class="col-sm-10 col-sm-offset-1">
 						<div class="row">
 							<div data-sr="enter bottom and move 50px over 1.2s" class="col-sm-12" >
-								<p>
+								<p aria-label="about Seidler diaries">
 									Most Australians have seen many Seidler-designed buildings such as Australia Square and the Horizon Apartments, but not many know that as a young man he spent most of 1940-1941 in an internment camp in Canada.
 <br/><br/>
 This project explores his diary entries from the period, setting them to music which will be performed in one of his many buildings next year.
@@ -423,7 +423,7 @@ All donations to this project will be used to provide myself and Christopher wit
 		</div>
 
 	</section>
-	<section id="section3-2">
+	<section id="section3-2" aria-labelledby="section3-2-h">
 
 		<div class="about" style="padding: 50px">
 
@@ -432,10 +432,10 @@ All donations to this project will be used to provide myself and Christopher wit
 				<div class="row">
 
 					<div class="col-lg-10 col-lg-offset-1" style="text-align: center;">
-						<h3 data-sr="enter left and move 50px over 1.2s" >Store</h3>
-						<hr data-sr="" >
-						<p data-sr="" >A selection of my works are available to purchase from my store</p>
-						<a data-sr="enter left and move 50px over 1.2s" href="https://payhip.com/GeorgiaScott" class="btn btn-default bolt-button-dark" >
+						<h3 data-sr="enter left and move 50px over 1.2s" id="section3-2-h">Store</h3>
+						<hr data-sr="" aria-hidden="true">
+						<p data-sr="" aria-label="about store">A selection of my works are available to purchase from my store</p>
+						<a data-sr="enter left and move 50px over 1.2s" href="https://payhip.com/GeorgiaScott" class="btn btn-default bolt-button-dark" role="link">
 							Visit My Store
 						</a>
 					</div>
@@ -449,7 +449,7 @@ All donations to this project will be used to provide myself and Christopher wit
 
 	</section>
 
-	<section id="section4">
+	<section id="section4" aria-hidden="true">
 
 		<div class="social">
 
@@ -460,7 +460,7 @@ All donations to this project will be used to provide myself and Christopher wit
 					<!-- Page Title -->
 					<div class="col-lg-10 col-lg-offset-1 page-title-2">
 						<h3 data-sr="enter left and move 50px over 1.2s">Social</h3>
-						<hr>
+						<hr aria-hidden="true">
 					</div>
 
 					<div class="col-sm-6">
@@ -491,7 +491,7 @@ All donations to this project will be used to provide myself and Christopher wit
 
 
 	<!-- Begin Contact -->
-	<section id="section6">
+	<section id="section6" aria-labelledby="section6-h">
 
 		<div class="contact">
 
@@ -499,26 +499,26 @@ All donations to this project will be used to provide myself and Christopher wit
 
 				<!-- Page Title -->
 				<div class="col-lg-10 col-lg-offset-1 page-title">
-					<h3 data-sr="enter left and move 50px over 1.2s">Contact</h3>
-					<hr>
-					<p data-sr="">Please get in touch if you'd like more information!</p>
-					<p data-sr="">
-						<i class="contact-icon ion-ios7-email-outline"></i>
-						<br>
-						<a href="mailto:georgia@georgiascott.co.uk">georgia@georgiascott.co.uk</a>
+					<h3 data-sr="enter left and move 50px over 1.2s" id="section6-h">Contact</h3>
+					<hr aria-hidden="true">
+					<p data-sr="" aria-label="contact introduction">Please get in touch if you'd like more information!</p>
+					<p data-sr="" aria-labelledby="a-email">
+						<i class="contact-icon ion-ios7-email-outline" aria-hidden="true"></i>
+						<br aria-hidden="true">
+						<a id="a-email" href="mailto:georgia@georgiascott.co.uk" aria-role="link" aria-label="email address">georgia@georgiascott.co.uk</a>
 					</p>
-					<p data-sr="">
-						<i class="contact-icon ion-ios7-telephone-outline"></i>
-						<br>
-						<a href="tel:+61497497998">+61 497 497 998</a>
+					<p data-sr="" aria-labelledby="a-phone">
+						<i class="contact-icon ion-ios7-telephone-outline" aria-hidden="true"></i>
+						<br aria-hidden="true">
+						<a id="a-phone" href="tel:+61497497998" aria-role="link" aria-label="telephone number">+61 497 497 998</a>
 					</p>
-					<hr>
-					<p data-sr="">
-						<a class="social-icon-facebook" href="https://www.facebook.com/GScottComposer"><i class="contact-icon ion-social-facebook"></i></a>
-						&nbsp;
-						<a class="social-icon-twitter" href="https://www.twitter.com/GScottComposer"><i class="contact-icon ion-social-twitter"></i></a>
-						&nbsp;
-						<a class="social-icon-linkedin" href="https://uk.linkedin.com/pub/georgia-scott/102/955/a9"><i class="contact-icon ion-social-linkedin"></i></a>
+					<hr aria-hidden="true">
+					<p data-sr="" aria-label="social media links" role="list">
+						<a class="social-icon-facebook" href="https://www.facebook.com/GScottComposer" aria-role="link" aria-label="Facebook page"><i class="contact-icon ion-social-facebook" aria-hidden="true"></i></a>
+						<span aria-hidden="true">&nbsp;</span>
+						<a class="social-icon-twitter" href="https://www.twitter.com/GScottComposer" aria-role="link" aria-label="Twitter"><i class="contact-icon ion-social-twitter" aria-hidden="true"></i></a>
+						<span aria-hidden="true">&nbsp;</span>
+						<a class="social-icon-linkedin" href="https://uk.linkedin.com/pub/georgia-scott/102/955/a9" aria-role="link" aria-label="LinkedIn"><i class="contact-icon ion-social-linkedin" aria-hidden="true"></i></a>
 					</p>
 				</div>
 
@@ -530,18 +530,18 @@ All donations to this project will be used to provide myself and Christopher wit
 	<!-- End Contact -->
 
 	<!-- Begin Footer -->
-	<footer id="footer">
+	<footer id="footer" aria-label="footer">
 
 		<div class="container">
 			
 			<!-- Copyright And Social -->
 			<div class="col-sm-5">
-				<p class="copyright no-margin">Copyright &copy; 2021 Georgia Scott. All Rights Reserved.</p>
+				<p class="copyright no-margin" aria-label="copyright">Copyright &copy; 2021 Georgia Scott. All Rights Reserved.</p>
 			</div>
 
 			<!-- Go To Top -->
-			<div class="col-sm-2 text-center">
-				<p class="no-margin" style="text-align: center"><span class="ion-ios7-arrow-up up-icon scroll-top" style="display: inline-block;"></span></p>
+			<div class="col-sm-2 text-center" aria-hidden="true">
+				<p class="no-margin" style="text-align: center"><span class="ion-ios7-arrow-up up-icon scroll-top" style="display: inline-block;" role="link"></span></p>
 			</div>
 
 		</div>
