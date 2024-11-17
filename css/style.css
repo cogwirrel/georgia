@@ -61,7 +61,7 @@ body a:hover {
 	-webkit-transition: all 1s ease;
 	-moz-transition: all 1s ease;
 	-o-transition: all 1s ease;
-	transition: all 1s ease;   
+	transition: all 1s ease;
 }
 
 .no-margin { margin:0 !important; }
@@ -190,7 +190,7 @@ h6 {
 	font-size: 14px;
 	letter-spacing: 2px;
 	font-weight: 700;
-	margin: 0; 
+	margin: 0;
 	z-index: 1;
 }
 
@@ -198,13 +198,13 @@ h6 {
 	height: 100px;
 }
 
-.navbar ul.nav a { 
+.navbar ul.nav a {
 	color: #c1c1c1;
 	height: 50px;
 	background: transparent;
 }
 
-ul.nav a:hover { 
+ul.nav a:hover {
 	color: #fff;
 	background-color: inherit;
 	-webkit-transition: color 0.5s ease;
@@ -217,7 +217,7 @@ ul.nav a:hover {
     color: #fff;
 }
 
-.navbar .nav li.active:after { 
+.navbar .nav li.active:after {
     content: "\f1ac";
     font-family: Ionicons;
     font-size: 32px;
@@ -382,7 +382,7 @@ hr {
 	font-size: 14px;
 	font-weight: 400;
 	font-weight: 300;
-	display: inline-block; 
+	display: inline-block;
 }
 
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
@@ -640,12 +640,12 @@ span.portfolio-hover span {
 	padding: 25px 25px 0 25px;
 }
 
-.social-icon { 
-	font-size: 11px; 
-	color: #272727; 
-	display: block !important; 
-	text-align: center !important; 
-	line-height: 26px !important; 
+.social-icon {
+	font-size: 11px;
+	color: #272727;
+	display: block !important;
+	text-align: center !important;
+	line-height: 26px !important;
 }
 
 .social-icon-holder {
@@ -711,7 +711,7 @@ span.portfolio-hover span {
    cursor: pointer;
 }
 
-.services .nav li.active:after { 
+.services .nav li.active:after {
     content: "\f155";
     font-family: Ionicons;
     font-style: normal;
@@ -783,6 +783,10 @@ span.portfolio-hover span {
 
 .social-icon-linkedin:hover {
 	color: #0077b5;
+}
+
+.social-icon-instagram:hover {
+	color: #962fbf;
 }
 
 .form-control {
@@ -879,7 +883,7 @@ textarea.form-control {
 	.navbar-header { height:60px }
 	.navbar-nav li a { line-height:60px; }
 	.navbar ul.nav a { color: #686868; height: 35px; }
-    .navbar-collapse { height:250px !important; } 
+    .navbar-collapse { height:250px !important; }
     .navbar-toggle { background-color: transparent; border:0; padding:13px 0 0 0; border-radius:0; margin-top:0; }
     .navbar-brand { margin-top: 1px;padding: 14px 15px; }
     .logo-icon { font-size:21px; line-height: 1.40 !important; }
@@ -942,7 +946,7 @@ textarea.form-control {
 	.navbar-header { height:60px }
 	.navbar-nav li a { line-height:60px; }
 	.navbar ul.nav a { color: #686868; height: 35px; }
-    .navbar-collapse { height:250px !important; } 
+    .navbar-collapse { height:250px !important; }
     .navbar-toggle { background-color: transparent; border:0; padding:13px 0 0 0; border-radius:0; margin-top:0; }
     .navbar-brand { margin-top: 1px;padding: 14px 15px; }
     .logo-icon { font-size:21px; line-height: 1.40 !important; }
